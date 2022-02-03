@@ -1,33 +1,27 @@
 using System.IO;
 using System.Xml.Serialization;
 
-public class XMLOp
+public class XmlSerializer
 {
-    // Write object to xml file
-    public static void Serialize(object obj, string xmlPath)
-    {
-        XmlSerializer serializer = new XmlSerializer(obj.GetType());
-        StreamWriter writer = new StreamWriter(xmlPath);
-        serializer.Serialize(writer.BaseStream, obj);
-        writer.Close();
-    }
+    // Write item to xml file
+	public static void Serialize(object item, string path)
+	{
+        // TODO: Use try/catch statement
+		XmlSerializer serializer = new XmlSerializer(item.GetType());
+		StreamWriter writer = new StreamWriter(path);
+		serializer.Serialize(writer.BaseStream, item);
+		writer.Close();
+	}
 
-    // Read xml file into object
-    public static T Deserialize<T>(string xmlPath)
-    {
-        try 
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
-            using (var stream = new FileStream(xmlPath, FileMode.Open))
-            {
-                T xml = (T)serializer.Deserialize(stream);
-                return xml;
-            }
-        }
-        catch (Exception e)
-        {
-            Debug.LogError("Exception importing xml file: " + e);
-            return default;
-        }
-    }
+    // Read object from xml file
+	public static T Deserialize<T>(string path)
+	{
+        // TODO: Use try/catch statement
+		XmlSerializer serializer = new XmlSerializer(typeof(T));
+		StreamReader reader = new StreamReader(path);
+		T deserialized = (T)serializer.Deserialize(reader.BaseStream);
+		reader.Close();
+        console.log("Read fle: ", deserialized);
+		return deserialized;
+	}
 }
