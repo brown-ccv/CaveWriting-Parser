@@ -1,2 +1,2 @@
 # CaveWriting-Parser
-Parser for converting XML code from CaveWriting into a Unity project
+Unity packaged used to parse CaveWriting files (XML) into a Unity projects
