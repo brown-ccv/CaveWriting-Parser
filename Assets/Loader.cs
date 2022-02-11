@@ -8,7 +8,7 @@ public class Loader : MonoBehaviour
     {
         XmlSerializer serializer = new XmlSerializer(typeof(Story));
         StreamReader reader = new StreamReader("./xml TEST/run.xml");
-        var project = (Story)serializer.Deserialize(reader);
-        Debug.Log(project);
+        var story = (Story)serializer.Deserialize(reader);
+        Debug.Log("Story: " + story);
     }
 }

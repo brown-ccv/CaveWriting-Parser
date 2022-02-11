@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "Classes/"
+cd "Assets/Classes/"
 
 # Append text to beginning of each cs file
 
