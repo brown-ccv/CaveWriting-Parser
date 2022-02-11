@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 public class NumClicks { 
 
 	[XmlAttribute(AttributeName="num_clicks")] 
-	public int NumClicks; 
+	public int Count; 
 
 	[XmlAttribute(AttributeName="reset")] 
 	public bool Reset; 

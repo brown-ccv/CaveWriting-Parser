@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Xml.Serialization;
+using System.Collections.Generic;
 
 [XmlRoot(ElementName="Text")]
 public class Text { 
 
 	[XmlElement(ElementName="text")] 
-	public List<string> Text; 
+	public List<string> Content;
 
 	[XmlAttribute(AttributeName="horiz-align")] 
 	public string HorizAlign; 

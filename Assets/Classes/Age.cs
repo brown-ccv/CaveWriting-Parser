@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 public class Age { 
 
 	[XmlAttribute(AttributeName="age")] 
-	public int Age; 
+	public int Time; 
 
 	[XmlAttribute(AttributeName="younger-than")] 
 	public bool YoungerThan; 

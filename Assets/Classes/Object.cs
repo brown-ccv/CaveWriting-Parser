@@ -20,7 +20,7 @@ public class Object {
 	public bool AroundSelfAxis; 
 
 	[XmlElement(ElementName="Scale")] 
-	public DateTime Scale; 
+	public int Scale; 
 
 	[XmlElement(ElementName="Placement")] 
 	public Placement Placement; 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Xml.Serialization;
+using System.Collections.Generic;
 
 [XmlRoot(ElementName="Group")]
 public class Group { 
