@@ -1,3 +1,6 @@
+using UnityEngine;
+using System.Xml.Serialization;
+
 [XmlRoot(ElementName="Actions")]
 public class Actions { 
 

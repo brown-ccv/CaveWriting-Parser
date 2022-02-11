@@ -1,3 +1,6 @@
+using UnityEngine;
+using System.Xml.Serialization;
+
 [XmlRoot(ElementName="Background")]
 public class Background { 
 
