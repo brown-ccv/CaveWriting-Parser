@@ -8,7 +8,7 @@ public class Object {
 	public bool Visible; 
 
 	[XmlElement(ElementName="Color")] 
-	public double Color; 
+	public Color Color;
 
 	[XmlElement(ElementName="Lighting")] 
 	public bool Lighting; 
@@ -20,7 +20,7 @@ public class Object {
 	public bool AroundSelfAxis; 
 
 	[XmlElement(ElementName="Scale")] 
-	public int Scale; 
+	public double Scale; 
 
 	[XmlElement(ElementName="Placement")] 
 	public Placement Placement; 

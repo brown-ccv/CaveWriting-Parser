@@ -11,10 +11,10 @@ public class Link {
 	public bool RemainEnabled; 
 
 	[XmlElement(ElementName="EnabledColor")] 
-	public double EnabledColor; 
+	public Color EnabledColor; 
 
 	[XmlElement(ElementName="SelectedColor")] 
-	public double SelectedColor; 
+	public Color SelectedColor; 
 
 	[XmlElement(ElementName="Actions")] 
 	public Actions Actions; 

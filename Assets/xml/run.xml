@@ -94,7 +94,7 @@
               <Placement name="Center">
                      <RelativeTo>Center</RelativeTo>
                      <Position>(0.0, 0.0, 0.0)</Position>
-                            <Axis rotation="(0.0, 1.0, 0.0)" angle="0.0"/>
+                     <Axis rotation="(0.0, 1.0, 0.0)" angle="0.0"/>
               </Placement>
        </PlacementRoot>
 

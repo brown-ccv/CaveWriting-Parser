@@ -8,7 +8,7 @@ public class Transition {
 	public bool Visible; 
 
 	[XmlAttribute(AttributeName="duration")] 
-	public int Duration; 
+	public double Duration; 
 
 	[XmlText] 
 	public string Text; 

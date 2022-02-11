@@ -7,8 +7,8 @@ public class Placement {
 	[XmlElement(ElementName="RelativeTo")] 
 	public string RelativeTo; 
 
-	[XmlElement(ElementName="Position")] 
-	public string Position; 
+	[XmlElement(ElementName="Position")]
+	public Vector3 Position; 
 
 	[XmlElement(ElementName="Axis")] 
 	public Axis Axis; 

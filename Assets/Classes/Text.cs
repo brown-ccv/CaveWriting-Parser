@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class Text { 
 
 	[XmlElement(ElementName="text")] 
-	public List<string> Content;
+	public string Content;
 
 	[XmlAttribute(AttributeName="horiz-align")] 
 	public string HorizAlign; 

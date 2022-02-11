@@ -14,13 +14,21 @@ Any class using the `List` type must prepend `using System.Collections.Generic;`
 
 ### Fixed types
 
-The [XML to C# convertor](https://json2csharp.com/xml-to-csharp) used to generate the C# classes did not type all of the attributes correctly. Below is the exhaustive list of original types and what they've been corrected to
+The [XML to C# convertor](https://json2csharp.com/xml-to-csharp) used to generate the C# classes did not type all of the attributes correctly. Below is the exhaustive list of original types and what they've been corrected to:
 
-- In Object.cs: `public DateTime Scale` &rarr; `public int Scale`
-- In Transition.cs: `public bool Text` &rarr; `public string Text`
-- In GroupRef.cs: `public bool Text` &rarr; `public string Text`
-- In ObjectChange.cs: `public bool Text` &rarr; `public string Text`
-- In TimedActions.cs: `public bool Text` &rarr; `public string Text`
+| File              | Original          | Fixed             |
+| ---------------   | ---------------   | ---------------   |
+| Object.cs | `public DateTime Scale` | `public double Scale`
+| Object.cs | `public double Color`   | `public Color Color`
+| Transition.cs | `public bool Text`  | `public string Text`
+| GroupRef.cs   | `public bool Text`  | `public string Text`
+| ObjectChange.cs   | `public bool Text`  | `public string Text`
+| TimedActions.cs   | `public bool Text`  | `public string Text`
+| Link.cs   | `public double EnabledColor`    | `public Color EnabledColor`
+| Link.cs   | `public double SelectedColor`   | `public Color SelectedColor`
+| Transition.cs | `public int Duration` | `public double Duration`
+| Text.cs | `public List<string> Content` | `public string Content`
+| Axis.cs | `public string Rotation;`  | `public Vector3 Rotation;`
 
 ### Renamed fields
 
@@ -76,7 +84,7 @@ The `text` element of `Text` is `Content` in c#:
 > public class Text { 
 > 
 >    [XmlElement(ElementName="text")] 
->    public List<string> Content;
+>    public string Content;
 > 
 >    [XmlAttribute(AttributeName="horiz-align")] 
 >    public string HorizAlign; 
@@ -89,5 +97,28 @@ The `text` element of `Text` is `Content` in c#:
 > 
 >    [XmlAttribute(AttributeName="depth")] 
 >    public double Depth; 
-> 
+> }
 > ```
+
+## TODO
+
+- Make an enumeration for the "center" and things like it? All sorts of xml tags point to this location type (`HorizAlign`, `VertAlign`, `RelativeTo`, etc.)
+- All path names in the xml will need to replace `./` with `Application.dataPath + "/xml/"`
+  - Do this in the python script in CaveWriting-Projects?
+
+## Pitfalls
+
+### Stuff to Figure Out
+
+- Is `<Transition>` always `MoveRel` - `Placement` - `<RelativeTo>Center</RelativeTo>`?
+
+### Non-Serializable Types
+
+Some Unity specific C# types aren't automatically serialized. Will have to define our own way of serializing these classes
+
+1) `<Color>[r], [g], [b]</Color>` &rarr; `Color`
+   - Object.Color
+   - Link.EnabledColor
+   - Link.SelectedColor
+2) `<Position>([x], [y], [z])</Position>` &rarr; `Vector3`
+3) `<Axis rotation="(0.0, 1.0, 0.0)" />` &rarr; `Vector3`
