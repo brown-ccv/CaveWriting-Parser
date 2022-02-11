@@ -29,6 +29,9 @@ The [XML to C# convertor](https://json2csharp.com/xml-to-csharp) used to generat
 | Transition.cs | `public int Duration` | `public double Duration`
 | Text.cs | `public List<string> Content` | `public string Content`
 | Axis.cs | `public string Rotation;`  | `public Vector3 Rotation;`
+| ParticleSystem.cs | `public int ActionsName;` | `public string ActionsName;`
+| Transition.cs | `public double Color;`    | `public Color Color;`
+| ParticleActionList.cs | `public int Name;` | `public string Name;`
 
 ### Renamed fields
 
@@ -102,11 +105,15 @@ The `text` element of `Text` is `Content` in c#:
 
 ## TODO
 
+- Change Background.Color to `public Color`
+- Change Axis.Rotation to `public Vector3`
 - Make an enumeration for the "center" and things like it? All sorts of xml tags point to this location type (`HorizAlign`, `VertAlign`, `RelativeTo`, etc.)
 - All path names in the xml will need to replace `./` with `Application.dataPath + "/xml/"`
   - Do this in the python script in CaveWriting-Projects?
 
 ## Pitfalls
+
+- `Object.Color` contains 3 values in XML but `Color` type is RGBA
 
 ### Stuff to Figure Out
 
@@ -120,5 +127,9 @@ Some Unity specific C# types aren't automatically serialized. Will have to defin
    - Object.Color
    - Link.EnabledColor
    - Link.SelectedColor
+   - Transition.Color
+   - Background.Color (`<Background color="0, 0, 0"/>`)
 2) `<Position>([x], [y], [z])</Position>` &rarr; `Vector3`
+   - Placement.Position
 3) `<Axis rotation="(0.0, 1.0, 0.0)" />` &rarr; `Vector3`
+   - Axis.Rotation

@@ -18,5 +18,5 @@ public class ParticleActionList {
 	public RemoveCondition RemoveCondition; 
 
 	[XmlAttribute(AttributeName="name")] 
-	public int Name; 
+	public string Name; 
 }

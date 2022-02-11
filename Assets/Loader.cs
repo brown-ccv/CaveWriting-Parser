@@ -11,8 +11,8 @@ public class Loader : MonoBehaviour
         Story story;
 
         // TEMP: Test types against full project
-        // using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run - Copy.xml"))
-        using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run.xml"))
+        using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run - Copy.xml"))
+        // using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run.xml"))
         {
             story = (Story)serializer.Deserialize(reader);
         }

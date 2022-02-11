@@ -8,7 +8,7 @@ public class ParticleSystem {
 	public int MaxParticles; 
 
 	[XmlAttribute(AttributeName="actions-name")] 
-	public int ActionsName; 
+	public string ActionsName; 
 
 	[XmlAttribute(AttributeName="particle-group")] 
 	public string ParticleGroup; 
