@@ -11,7 +11,7 @@ public class TimedActions {
 	public double SecondsTime; 
 
 	[XmlText] 
-	public bool Text; 
+	public string Text; 
 
 	[XmlElement(ElementName="TimerChange")] 
 	public TimerChange TimerChange; 

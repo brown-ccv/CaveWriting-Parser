@@ -17,6 +17,10 @@ Any class using the `List` type must prepend `using System.Collections.Generic;`
 The [XML to C# convertor](https://json2csharp.com/xml-to-csharp) used to generate the C# classes did not type all of the attributes correctly. Below is the exhaustive list of original types and what they've been corrected to
 
 - In Object.cs: `public DateTime Scale` &rarr; `public int Scale`
+- In Transition.cs: `public bool Text` &rarr; `public string Text`
+- In GroupRef.cs: `public bool Text` &rarr; `public string Text`
+- In ObjectChange.cs: `public bool Text` &rarr; `public string Text`
+- In TimedActions.cs: `public bool Text` &rarr; `public string Text`
 
 ### Renamed fields
 

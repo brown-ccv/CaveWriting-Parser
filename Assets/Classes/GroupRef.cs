@@ -11,5 +11,5 @@ public class GroupRef {
 	public string Name; 
 
 	[XmlText] 
-	public bool Text; 
+	public string Text; 
 }

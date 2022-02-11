@@ -11,7 +11,7 @@ public class Transition {
 	public int Duration; 
 
 	[XmlText] 
-	public bool Text; 
+	public string Text; 
 
 	[XmlElement(ElementName="MoveRel")] 
 	public MoveRel MoveRel; 
