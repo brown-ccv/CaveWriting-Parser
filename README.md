@@ -276,3 +276,5 @@ TODO: Background becomes a property of Global and is of type Color. (Will be abl
 - Make an enumeration for the "center" and things like it? All sorts of xml tags point to this location type (`HorizAlign`, `VertAlign`, `RelativeTo`, etc.)
 - All path names in the xml will need to replace `./` with `Application.dataPath + "/xml/"`
   - Do this in the python script in CaveWriting-Projects?
+=======
+Unity packaged used to parse CaveWriting files (XML) into a Unity projects
