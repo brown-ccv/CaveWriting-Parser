@@ -153,9 +153,9 @@ Note that [Global.Background](#global) also contains this color conversion but o
 
 ### Vector3
 
-The original xml contains 3 values inside parenthesis, Unity needs to specify the x, y , and z properties.
+The original xml contains 3 values inside parenthesis, Unity needs to specify the x, y, and z properties.
 
-This change is made to `Placement.Position`. Note that their other other Vector3's in the program but [further changes](#xml-attributes-vs-elements) are needed.
+This change is made to `Placement.Position`. Note that there are other Vector3's in the program but [further changes](#xml-attributes-vs-elements) are needed.
 
 ```xml
    <!-- Original -->
@@ -217,7 +217,7 @@ Here's an example using the `Axis` class:
       [XmlElement(ElementName="Rotation")]
       public Vector3 Rotation;
 
-      [XmlElement(AttributeName="angle")]
+      [XmlElement(ElementName="Angle")]
       public double Angle; 
 }
 ```
@@ -228,17 +228,17 @@ I made (plan to make) some additional changes to the xml/c# files to make the co
 
 ### TimedAction
 
-TODO
+TODO:
 `TimedActions` should be `TimedAction`
 
 ### GroupRoot.Group.ObjectRef
 
-TODO
+TODO:
 `GroupRoot.Group.Objects` should be `GroupRoot.Group.ObjectRefs` where `.ObjectRef` is a list of strings pointing to the `Object.name` property
 
 ## Sound
 
-TODO
+TODO:
 
 - Xml attributes of `Sound` should become Xml elements.
 - Rename `Settings` as `SoundSettings`? Or just add everything as elements of sound?
@@ -246,7 +246,7 @@ TODO
 
 ### Particle Domain
 
-TODO
+TODO:
 
 - ParticleDomain should be an enum for the different possible types
 - Each type (Line, Box, Cylinder, Disc, Plane, Sphere) uses xml attributes, need to be xml elements
