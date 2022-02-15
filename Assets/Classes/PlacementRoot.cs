@@ -6,5 +6,5 @@ using System.Collections.Generic;
 public class PlacementRoot { 
 
 	[XmlElement(ElementName="Placement")] 
-	public List<Placement> Placement; 
+	public List<Placement> Placements; 
 }

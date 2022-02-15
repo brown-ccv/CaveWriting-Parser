@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Story xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="0">
+  <ObjectRoot>
+    <Object name="test object">
+      <Visible>true</Visible>
+      <!-- New -->
+      <Color>
+        <r>1</r>
+        <g>1</g>
+        <b>1</b>
+        <a>1</a>
+      </Color>
+      <Lighting>false</Lighting>
+      <ClickThrough>false</ClickThrough>
+      <AroundSelfAxis>false</AroundSelfAxis>
+      <Scale>2.5</Scale>
+      <Placement>
+        <RelativeTo>Center</RelativeTo>
+        <Position>
+          <x>0</x>
+          <y>1.5</y>
+          <z>-3.25</z>
+        </Position>
+      </Placement>
+      <Content>
+        <Text horiz-align="center" vert-align="center" font="./fonts/Lucida.ttf" depth="15">
+          <text>IF I TOLD HIM</text>
+        </Text>
+      </Content>
+    </Object>
+  </ObjectRoot>
+</Story>

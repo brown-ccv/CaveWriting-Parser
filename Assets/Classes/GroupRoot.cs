@@ -6,5 +6,5 @@ using System.Collections.Generic;
 public class GroupRoot { 
 
 	[XmlElement(ElementName="Group")] 
-	public List<Group> Group; 
+	public List<Group> Groups; 
 }

@@ -6,5 +6,5 @@ using System.Collections.Generic;
 public class ParticleActionRoot { 
 
 	[XmlElement(ElementName="ParticleActionList")] 
-	public List<ParticleActionList> ParticleActionList; 
+	public List<ParticleActionList> ParticleActionLists;
 }

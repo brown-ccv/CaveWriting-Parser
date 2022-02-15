@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?jaxfront version=2.1;time=2015-05-19 19:06:43.536;xui=jar:file:/Users/mpr/Brown/Sophomore/Cave%20Writing/CaveWriting/CWEditor.jar!/schema/caveschema.xui;xsd=caveschema.xsd?>
-<Story version="8" last_xpath="/Story/TimelineRoot/Timeline[5]
-">
+<Story version="8" last_xpath="/Story/TimelineRoot/Timeline[5]">
        <ObjectRoot>
               <Object name="start_button">
                      <Visible>true</Visible>

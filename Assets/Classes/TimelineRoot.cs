@@ -6,5 +6,5 @@ using System.Collections.Generic;
 public class TimelineRoot { 
 
 	[XmlElement(ElementName="Timeline")] 
-	public List<Timeline> Timeline; 
+	public List<Timeline> Timelines; 
 }

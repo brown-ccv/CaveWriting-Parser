@@ -6,5 +6,5 @@ using System.Collections.Generic;
 public class ObjectRoot { 
 
 	[XmlElement(ElementName="Object")] 
-	public List<Object> Object; 
+	public List<Object> Objects; 
 }

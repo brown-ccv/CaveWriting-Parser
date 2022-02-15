@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Xml.Serialization;
+using Newtonsoft.Json; // TEMP
 
 [XmlRoot(ElementName="Object")]
 public class Object { 

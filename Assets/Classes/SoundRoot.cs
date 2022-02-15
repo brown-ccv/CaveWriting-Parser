@@ -6,5 +6,5 @@ using System.Collections.Generic;
 public class SoundRoot { 
 
 	[XmlElement(ElementName="Sound")] 
-	public List<Sound> Sound; 
+	public List<Sound> Sounds; 
 }

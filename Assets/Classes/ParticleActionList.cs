@@ -12,7 +12,7 @@ public class ParticleActionList {
 	public Vel Vel; 
 
 	[XmlElement(ElementName="ParticleAction")] 
-	public List<ParticleAction> ParticleAction; 
+	public List<ParticleAction> ParticleActions; 
 
 	[XmlElement(ElementName="RemoveCondition")] 
 	public RemoveCondition RemoveCondition; 
