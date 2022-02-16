@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Xml.Serialization;
 
 [XmlRoot(ElementName="TimedActions")]
-public class TimedActions { 
+public class TimedAction { 
 
 	[XmlElement(ElementName="GroupRef")] 
 	public GroupRef GroupRef; 

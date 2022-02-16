@@ -1,9 +1,9 @@
-using UnityEngine;
-using System.Xml.Serialization;
+// using UnityEngine;
+// using System.Xml.Serialization;
 
-[XmlRoot(ElementName="Objects")]
-public class Objects { 
+// [XmlRoot(ElementName="Objects")]
+// public class Objects { 
 
-	[XmlAttribute(AttributeName="name")] 
-	public string Name; 
-}
+// 	[XmlAttribute(AttributeName="name")] 
+// 	public string Name; 
+// }

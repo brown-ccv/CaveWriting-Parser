@@ -1,6 +1,6 @@
 # CaveWriting-Parser
 
-Parser for converting XML code from CaveWriting into a Unity project
+Unity package for converting XML code from CaveWriting projects into a Unity project
 
 I'm adding notes about the changes to the C# classes I'm making while I work through them. This is just in case I have to redo the conversion and thus these changes. Notes can be deleted (moved at the least) when we go to publish the finalized package.
 
@@ -277,9 +277,10 @@ public class Global {
 
 ### Next Steps
 
-1) [Xml changes for Vector3 types with attribute -> element conversions](#xml-attributes-vs-elements)
-2) [TimedActions change](#timedaction)
-3) [GroupRoot.Group.Objects change](#grouprootgroupobjectref)
+1) [TimedActions change](#timedaction)
+2) [GroupRoot.Group.Objects change](#grouprootgroupobjectref)
+3) Use [XmlArray("")] and [XmlArrayItem("")] tags wherever Lists are present
+4) The arrays in `*Root.cs` files can be moved into `Story.cs`, no need for the extra classes. Rename variables `*List`?
 
 ### Stuff to Figure Out
 
@@ -287,5 +288,8 @@ public class Global {
 - Make an enumeration for the "center" and things like it? All sorts of xml tags point to this location type (`HorizAlign`, `VertAlign`, `RelativeTo`, etc.)
 - All path names in the xml will need to replace `./` with `Application.dataPath + "/xml/"`
   - Do this in the python script in CaveWriting-Projects?
-=======
-Unity packaged used to parse CaveWriting files (XML) into a Unity projects
+
+### Parking Lot
+
+1) [Sound changes](#sound)
+2) [ParticleDomain changes](#particle-domain)
