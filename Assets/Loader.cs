@@ -39,7 +39,7 @@ public class Loader : MonoBehaviour
         //     example.ObjectRoot.Objects[0].Content.Text.Depth = 15;
         //     PrintObject(example);
 
-        //     Stream stream = File.Create(Application.dataPath + "/xml/test_write.xml");
+        //     Stream stream = File.Create(Application.dataPath + "/xml/run_test_write.xml");
         //     serializer.Serialize(stream, example);
         //     stream.Close();
 
@@ -53,7 +53,7 @@ public class Loader : MonoBehaviour
 
         // Deserialize run.xml
         Story story;
-        using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run_example.xml"))
+        using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run_example_original.xml"))
         {
             story = (Story)serializer.Deserialize(reader);
         }
