@@ -241,41 +241,6 @@ public class Timeline {
 }
 ```
 
-### GroupRoot.Group.ObjectRef
-
-The `Group.Objects` class has been deleted as it is just an XML element with a name attribute. The name attribute is translated as the inner text of `Objects`, and the tag has been renamed `ObjectRef`. The variable name has been updated as well, to `ObjectRefs`.
-
-```xml
-<!-- Original -->
-<Group name="title">
-       <ObjectRef name="start_button" />
-       <ObjectRef name="A Completed Portrait of Picasso" />
-</Group>
-
-<!-- New -->
-<Group name="title">
-       <ObjectRef>start_button</ObjectRef>
-       <ObjectRef>A Completed Portrait of Picasso</ObjectRef>
-</Group>
-```
-
-```cs
-[XmlRoot(ElementName="Group")]
-public class Group { 
-
-   // Original 
-   [XmlElement(ElementName="Objects")]
-   public List<Objects> Objects;
-
-   // New
-   [XmlElement(ElementName="ObjectRef")]
-   public List<string> ObjectRefs;
-
-   /* ... */
-}
-
-```
-
 ## Sound
 
 TODO:
@@ -311,6 +276,40 @@ public class Global {
    /* ... */
 }
 
+```
+
+### GroupRoot.Group.ObjectRef
+
+The `Group.Objects` class has been deleted as it is just an XML element with a name attribute. The name attribute is translated as the inner text of `Objects`, and the tag has been renamed `ObjectRef`. The variable name has been updated as well, to `ObjectRefs`.
+
+```xml
+<!-- Original -->
+<Group name="title">
+       <ObjectRef name="start_button" />
+       <ObjectRef name="A Completed Portrait of Picasso" />
+</Group>
+
+<!-- New -->
+<Group name="title">
+       <ObjectRef>start_button</ObjectRef>
+       <ObjectRef>A Completed Portrait of Picasso</ObjectRef>
+</Group>
+```
+
+```cs
+[XmlRoot(ElementName="Group")]
+public class Group { 
+
+   // Original 
+   [XmlElement(ElementName="Objects")]
+   public List<Objects> Objects;
+
+   // New
+   [XmlElement(ElementName="ObjectRef")]
+   public List<string> ObjectRefs;
+
+   /* ... */
+}
 ```
 
 ## TODO
