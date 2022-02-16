@@ -316,9 +316,9 @@ public class Group {
 
 ### Next Steps
 
-1) The arrays in `*Root.cs` files can be moved into `Story.cs`, no need for the extra classes. Rename variables `*List`?
-2) Make `SoundRef` just a string, not a class with `name` attribute
-3) Use [XmlArray("")] and [XmlArrayItem("")] tags wherever Lists are present
+1) Make `SoundRef` just a string, not a class with `name` attribute
+2) The arrays in `*Root.cs` files can be moved into `Story.cs`, no need for the extra classes. Rename variables `*List`?
+3) Use [XmlArray("")] and [XmlArrayItem("")] tags wherever Lists are present (Need to do more research)
 
 ### Stuff to Figure Out
 
