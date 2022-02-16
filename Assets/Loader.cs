@@ -12,17 +12,17 @@ public class Loader : MonoBehaviour
 
         XmlSerializer serializer = new XmlSerializer(
             typeof(Story), 
-            new Type[] { typeof(Color), typeof(Vector3), typeof(Vector2) }
+            new Type[] { typeof(Color32), typeof(Vector3), typeof(Vector2) }
         );
 
-        // TEMP - Test serialization with Color and Vector3
+        // TEMP - Test serialization with Color32 and Vector3
         // {
         //     Story example = new Story();
         //     example.ObjectRoot = new ObjectRoot();
         //     example.ObjectRoot.Objects = new List<Object>(){ new Object()};
         //     example.ObjectRoot.Objects[0].Name = "test object";
         //     example.ObjectRoot.Objects[0].Visible = true;
-        //     example.ObjectRoot.Objects[0].Color = Color.white;
+        //     example.ObjectRoot.Objects[0].Color = new Color32(127, 127, 127, 255);
         //     example.ObjectRoot.Objects[0].Lighting = false;
         //     example.ObjectRoot.Objects[0].ClickThrough = false;
         //     example.ObjectRoot.Objects[0].AroundSelfAxis = false;
@@ -53,7 +53,7 @@ public class Loader : MonoBehaviour
 
         // Deserialize run.xml
         Story story;
-        using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run_example_original.xml"))
+        using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run_example_current.xml"))
         {
             story = (Story)serializer.Deserialize(reader);
         }

@@ -29,5 +29,5 @@ public class Transition {
 	public Sound Sound; 
 
 	[XmlElement(ElementName="Color")] 
-	public Color Color; 
+	public Color32 Color; 
 }

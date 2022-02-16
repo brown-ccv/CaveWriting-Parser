@@ -9,7 +9,7 @@ public class Object {
 	public bool Visible; 
 
 	[XmlElement(ElementName="Color")] 
-	public Color Color;
+	public Color32 Color;
 
 	[XmlElement(ElementName="Lighting")] 
 	public bool Lighting; 

@@ -1,9 +1,9 @@
-using UnityEngine;
-using System.Xml.Serialization;
+// using UnityEngine;
+// using System.Xml.Serialization;
 
-[XmlRoot(ElementName="Background")]
-public class Background { 
+// [XmlRoot(ElementName="Background")]
+// public class Background { 
 
-	[XmlAttribute(AttributeName="color")] 
-	public string Color; 
-}
+// 	[XmlAttribute(AttributeName="color")] 
+// 	public string Color; 
+// }
