@@ -228,13 +228,53 @@ I made (plan to make) some additional changes to the xml/c# files to make the co
 
 ### TimedAction
 
-TODO:
-`TimedActions` should be `TimedAction`
+The auto-generated class `TimedActions` has been renamed `TimedAction` and the file name updated accordingly. This is sort of the opposite problem as appending `s` to `<List>` type properties - the `s` belongs on the variable name, not the class itself. `Timeline.cs` uses the `TimedAction` class.
+
+```cs
+[XmlRoot(ElementName="Timeline")]
+public class Timeline { 
+
+   [XmlElement(ElementName="TimedAction")]
+   public List<TimedAction> TimedActions; 
+
+   /* ... */
+}
+```
 
 ### GroupRoot.Group.ObjectRef
 
-TODO:
-`GroupRoot.Group.Objects` should be `GroupRoot.Group.ObjectRefs` where `.ObjectRef` is a list of strings pointing to the `Object.name` property
+The `Group.Objects` class has been deleted as it is just an XML element with a name attribute. The name attribute is translated as the inner text of `Objects`, and the tag has been renamed `ObjectRef`. The variable name has been updated as well, to `ObjectRefs`.
+
+```xml
+<!-- Original -->
+<Group name="title">
+       <ObjectRef name="start_button" />
+       <ObjectRef name="A Completed Portrait of Picasso" />
+</Group>
+
+<!-- New -->
+<Group name="title">
+       <ObjectRef>start_button</ObjectRef>
+       <ObjectRef>A Completed Portrait of Picasso</ObjectRef>
+</Group>
+```
+
+```cs
+[XmlRoot(ElementName="Group")]
+public class Group { 
+
+   // Original 
+   [XmlElement(ElementName="Objects")]
+   public List<Objects> Objects;
+
+   // New
+   [XmlElement(ElementName="ObjectRef")]
+   public List<string> ObjectRefs;
+
+   /* ... */
+}
+
+```
 
 ## Sound
 
@@ -277,10 +317,9 @@ public class Global {
 
 ### Next Steps
 
-1) [TimedActions change](#timedaction)
-2) [GroupRoot.Group.Objects change](#grouprootgroupobjectref)
+1) The arrays in `*Root.cs` files can be moved into `Story.cs`, no need for the extra classes. Rename variables `*List`?
+2) Make `SoundRef` just a string, not a class with `name` attribute
 3) Use [XmlArray("")] and [XmlArrayItem("")] tags wherever Lists are present
-4) The arrays in `*Root.cs` files can be moved into `Story.cs`, no need for the extra classes. Rename variables `*List`?
 
 ### Stuff to Figure Out
 
