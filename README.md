@@ -17,18 +17,18 @@ The [XML to C# convertor](https://json2csharp.com/xml-to-csharp) used to generat
 | File              | Original          | Fixed             |
 | ---------------   | ---------------   | ---------------   |
 | Object.cs | `public DateTime Scale` | `public double Scale`
-| Object.cs | `public double Color`   | `public Color Color`
+| Object.cs | `public double Color`   | `public Color32 Color`
 | Transition.cs | `public bool Text`  | `public string Text`
 | GroupRef.cs   | `public bool Text`  | `public string Text`
 | ObjectChange.cs   | `public bool Text`  | `public string Text`
 | TimedActions.cs   | `public bool Text`  | `public string Text`
-| Link.cs   | `public double EnabledColor`    | `public Color EnabledColor`
-| Link.cs   | `public double SelectedColor`   | `public Color SelectedColor`
+| Link.cs   | `public double EnabledColor`    | `public Color32 EnabledColor`
+| Link.cs   | `public double SelectedColor`   | `public Color32 SelectedColor`
 | Transition.cs | `public int Duration` | `public double Duration`
 | Text.cs | `public List<string> Content` | `public string Content`
 | Axis.cs | `public string Rotation;`  | `public Vector3 Rotation;`
 | ParticleSystem.cs | `public int ActionsName;` | `public string ActionsName;`
-| Transition.cs | `public double Color;`    | `public Color Color;`
+| Transition.cs | `public double Color;`    | `public Color32 Color;`
 | ParticleActionList.cs | `public int Name;` | `public string Name;`
 
 ## Renamed fields
@@ -126,7 +126,7 @@ C# variable types specific to Unity need to be arranged in a specific way in the
 
 ### Color
 
-The original XML holds 3 values (RGB) ranging from 0-255. Unity needs 4 values (RGBA) ranging from 0-1. The `<a>` value is always 1.
+The original XML holds 3 values (RGB) ranging from 0-255. The Unity Color32 type needs 4 values (RGBA). We always set the alpha value to full (255).
 
 The changes are present for the following classes:
 
@@ -142,10 +142,10 @@ The changes are present for the following classes:
    
    <!-- New -->
    <Color>
-     <r>1</r>
-     <g>1</g>
-     <b>1</b>
-     <a>1</a>
+     <r>255</r>
+     <g>255</g>
+     <b>255</b>
+     <a>255</a>
    </Color>
 ```
 
@@ -171,7 +171,7 @@ This change is made to `Placement.Position`. Note that there are other Vector3's
 
 ### Xml Attributes vs Elements
 
-Complex types cannot be stored as Xml attributes but some of the original Xml stores Unity types as Xml attributes. Fixing this requires changes to both the xml and C# class file. Note that ALL of the attributes of such a class  will be changed to elements, not just the complex type.
+Complex types cannot be stored as Xml attributes but some of the original Xml stores Unity types as Xml attributes. Fixing this requires changes to both the xml and C# class file. Note that ALL of the attributes of such a class  will be changed to elements, not just the complex type, and that the element name is Capitalized.
 
 This change is needed for the following properties:
 
@@ -258,17 +258,28 @@ TODO:
 ### Global
 
 TODO: Background becomes a property of Global and is of type Color. (Will be able to remove the Background class file)
+The `Global.Background` class only contains one attribute - it's color. The `Background` class has been deleted and `Global.Background` is a property of type `Color32`, renamed to `BackgroundColor`
+
+```cs
+[XmlRoot(ElementName="Global")]
+public class Global { 
+   /* ... */
+
+   [XmlElement(ElementName="Background")] 
+   public Color32 BackgroundColor;  
+
+   /* ... */
+}
+
+```
 
 ## TODO
 
 ### Next Steps
 
-1) [Xml changes for color types](#color)
-2) [Global.Background.Color] change(#global)
-3) [Xml changes for Vector3 types](#vector3)
-4) [Xml changes for Vector3 types with attribute -> element conversions](#xml-attributes-vs-elements)
-5) [TimedActions change](#timedaction)
-6) [GroupRoot.Group.Objects change](#grouprootgroupobjectref)
+1) [Xml changes for Vector3 types with attribute -> element conversions](#xml-attributes-vs-elements)
+2) [TimedActions change](#timedaction)
+3) [GroupRoot.Group.Objects change](#grouprootgroupobjectref)
 
 ### Stuff to Figure Out
 

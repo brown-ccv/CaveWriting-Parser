@@ -53,11 +53,11 @@ public class Loader : MonoBehaviour
 
         // Deserialize run.xml
         Story story;
-        using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run_example_current.xml"))
+        using (StreamReader reader = new StreamReader(Application.dataPath + "/xml/run_original_current.xml"))
         {
             story = (Story)serializer.Deserialize(reader);
         }
-        PrintObject(story);
+        PrintObject(story.ParticleActionRoot);
 
         // Quit
         Application.Quit();

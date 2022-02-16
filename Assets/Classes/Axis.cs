@@ -4,9 +4,9 @@ using System.Xml.Serialization;
 [XmlRoot(ElementName="Axis")]
 public class Axis { 
 
-	[XmlAttribute(AttributeName="rotation")] 
-	public string Rotation; 
+	[XmlElement(ElementName="Rotation")] 
+	public Vector3 Rotation; 
 
-	[XmlAttribute(AttributeName="angle")] 
+	[XmlElement(ElementName="Angle")] 
 	public double Angle; 
 }
