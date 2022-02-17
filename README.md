@@ -326,7 +326,7 @@ public class Story {
 
 ### LinkRoot
 
-The `LinkRoot` class follows the same pattern as the other [`*Root` classes](#story) but is itself a property of the `Object` class. I decised to rename the property `Links` instead of `LinkRoot` because it's not a part of the `Story` class - that change is made in the xml file as well.
+The `LinkRoot` class follows the same pattern as the other [`*Root` classes](#story) but is itself a property of the `Object` class. I decided to rename the property `Links` instead of `LinkRoot` because it's not a part of the `Story` class - that change is made in the xml file as well.
 
 ```cs
 [XmlRoot(ElementName="Object")]
@@ -421,3 +421,4 @@ This change is present in `Object.SoundRef` and `TimedAction.SoundRef`.
 
 1) [Sound changes](#sound)
 2) [ParticleDomain changes](#particle-domain)
+3) TimerChange
