@@ -103,22 +103,25 @@ The `text` element of `Text` is `Content` in c#:
 
 Properties that are `Lists` of elements have `s` appended to their c# variable - the XML is untouched.
 
-- `ObjectRoot.Object(s)`
-- `GroupRoot.Group(s)`
+- `Group.Ref(s)`
 - `ParticleActionList.ParticleAction(s)`
-- `ParticleActionRoot.ParticleActionList(s)`
-- `PlacementRoot.Placement(s)`
-- `SoundRoot.Sound(s)`
-- `TimelineRoot.Timeline(s)`
+- `Timeline.TimedActions`
 
-Here's an example using `ObjectRoot.Objects`:
+Here's an example using `Group.ObjectRefs`:
 
 > ```cs
->  [XmlElement(ElementName="Object")] 
->  public List<Object> Objects; 
+>[XmlRoot(ElementName="Group")]
+>public class Group { 
+>
+>  [XmlElement(ElementName="ObjectRef")]
+>  public List<string> ObjectRefs; 
+>
+>  [XmlAttribute(AttributeName="name")] 
+>  public string Name; 
+>}
 >```
 
-Note that [Timeline.TimedActions](#****) follows the same schema but other changes are made to the class
+Note that [Timeline.TimedActions](#timedaction) follows the same schema but other changes are made to the class.
 
 ## Unity Special Types
 
@@ -294,31 +297,55 @@ public class Story {
 
    [XmlArray(ElementName="ObjectRoot")]
    [XmlArrayItem(ElementName="Object")] 
-   public List<Object> ObjectList;
+   public List<Object> ObjectRoot
 
    [XmlArray(ElementName="GroupRoot")]
    [XmlArrayItem(ElementName="Group")] 
-   public List<Group> GroupList;
+   public List<Group> GroupRoot
 
    [XmlArray(ElementName="TimelineRoot")]
    [XmlArrayItem(ElementName="Timeline")] 
-   public List<Timeline> TimelineList;
+   public List<Timeline> TimelineRoot
 
    [XmlArray(ElementName="PlacementRoot")]
    [XmlArrayItem(ElementName="Placement")] 
-   public List<Placement> PlacementList;
+   public List<Placement> PlacementRoot
 
    [XmlArray(ElementName="SoundRoot")]
    [XmlArrayItem(ElementName="Sound")] 
-   public List<Sound> SoundList;
+   public List<Sound> SoundRoot
 
    [XmlArray(ElementName="ParticleActionRoot")]
    [XmlArrayItem(ElementName="ParticleActionList")] 
-   public List<ParticleAction> ParticleActionList;
+   public List<ParticleAction> ParticleActionRoot
 
    /* ... */
 }
 
+```
+
+### LinkRoot
+
+The `LinkRoot` class follows the same pattern as the other [`*Root` classes](#story) but is itself a property of the `Object` class. I decised to rename the property `Links` instead of `LinkRoot` because it's not a part of the `Story` class - that change is made in the xml file as well.
+
+```cs
+[XmlRoot(ElementName="Object")]
+public class Object { 
+
+   // Before 
+   [XmlElement(ElementName="LinkRoot")] 
+   public LinkRoot LinkRoot; 
+
+   /* ... */
+
+   // After 
+
+   [XmlArray(ElementName="Links")]
+   [XmlArrayItem(ElementName="Link")]
+   public List<Link> Links; 
+
+   /* ... */
+}
 ```
 
 ### Global

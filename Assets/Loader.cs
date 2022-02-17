@@ -2,8 +2,7 @@ using UnityEngine;
 using System;
 using System.IO;
 using System.Xml.Serialization;
-using Newtonsoft.Json; // TEMP
-using System.Collections.Generic; // TEMP
+using Newtonsoft.Json; // TEMP 
 
 public class Loader : MonoBehaviour
 {

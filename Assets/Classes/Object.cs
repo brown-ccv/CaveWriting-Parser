@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Xml.Serialization;
-using Newtonsoft.Json; // TEMP
-
+using System.Collections.Generic;
 [XmlRoot(ElementName="Object")]
 public class Object { 
 
@@ -29,8 +28,11 @@ public class Object {
 	[XmlElement(ElementName="Content")] 
 	public Content Content; 
 
-	[XmlElement(ElementName="LinkRoot")] 
-	public LinkRoot LinkRoot; 
+	// [XmlElement(ElementName="LinkRoot")] 
+	// public LinkRoot LinkRoot; 
+	[XmlArray(ElementName="Links")]
+	[XmlArrayItem(ElementName="Link")]
+	public List<Link> Links; 
 
 	[XmlAttribute(AttributeName="name")] 
 	public string Name; 

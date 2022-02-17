@@ -16,7 +16,7 @@
                                    <text>IF I TOLD HIM</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -31,7 +31,7 @@
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="A Completed Portrait of Picasso">
                      <Visible>true</Visible>
