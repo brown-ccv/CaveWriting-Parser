@@ -410,6 +410,8 @@ This change is present in `Object.SoundRef` and `TimedAction.SoundRef`.
 
 ### Next Steps
 
+1) GroupRef.Transition (pull out to other class, GroupRef is just a string)
+
 ### Stuff to Figure Out
 
 - Is `<Transition>` always `MoveRel` - `Placement` - `<RelativeTo>Center</RelativeTo>`?
