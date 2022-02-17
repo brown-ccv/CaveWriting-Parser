@@ -3859,7 +3859,7 @@ denote</text>
                             </TimerChange>
                      </TimedAction>
                      <TimedAction seconds-time="0.001">
-                            <SoundRef>title_audio</SoundRef>
+                            <SoundRef name="title_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="4.0">
                             <GroupRef name="chunks">
@@ -3916,7 +3916,7 @@ denote</text>
               </Timeline>
               <Timeline name="stanza_one" start-immediately="false">
                      <TimedAction seconds-time="2.0">
-                            <SoundRef>stanza_one_sound</SoundRef>
+                            <SoundRef name="stanza_one_sound" />
                      </TimedAction>
                      <TimedAction seconds-time="0.5">
                             <ObjectChange name="stanza_one_start_button">
@@ -4256,7 +4256,7 @@ denote</text>
                             </ObjectChange>
                      </TimedAction>
                      <TimedAction seconds-time="1">
-                            <SoundRef>stanza_two_sound</SoundRef>
+                            <SoundRef name="stanza_two_sound" />
                      </TimedAction>
                      <TimedAction seconds-time="1.1">
                             <ObjectChange name="now_2">
@@ -4817,7 +4817,7 @@ denote</text>
                             </GroupRef>
                      </TimedAction>
                      <TimedAction seconds-time="1.0">
-                            <SoundRef>stanza_three_audio</SoundRef>
+                            <SoundRef name="stanza_three_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="1.5">
                             <GroupRef name="right wall">
@@ -5406,7 +5406,7 @@ denote</text>
               </Timeline>
               <Timeline name="stanza_five" start-immediately="false">
                      <TimedAction seconds-time="0.001">
-                            <SoundRef>stanza_five_audio</SoundRef>
+                            <SoundRef name="stanza_five_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="0.0">
                             <ObjectChange name="portrait">
@@ -5764,7 +5764,7 @@ denote</text>
               </Timeline>
               <Timeline name="stanza_six" start-immediately="false">
                      <TimedAction seconds-time="1.3">
-                            <SoundRef>stanza_six_audio</SoundRef>
+                            <SoundRef name="stanza_six_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="1.3">
                             <ObjectChange name="I_land">
@@ -6442,7 +6442,7 @@ denote</text>
                             </MoveCave>
                      </TimedAction>
                      <TimedAction seconds-time="0.0">
-                            <SoundRef>gertrubience</SoundRef>
+                            <SoundRef name="gertrubience" />
                      </TimedAction>
                      <TimedAction seconds-time="10.0">
                             <TimerChange name="ambience">

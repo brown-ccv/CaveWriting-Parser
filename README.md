@@ -241,7 +241,7 @@ public class Timeline {
 }
 ```
 
-## Sound
+### Sound
 
 TODO:
 
@@ -259,6 +259,67 @@ TODO:
 - *Can I convert these to Unity objects directly?*
 
 ## Class Consolidation
+
+### Story
+
+The `GroupRoot`, `ObjectRoot`, `ParticleActionRoot`, `PlacementRoot`, `SoundRoot`, and `TimelineRoot` properties of the `Story` class are all classes with only one property - a list. These fields contain all of the groups, objects, etc., in the project. The lists have been consolidated into `Story.cs` and `*Root.cs` files have been deleted. Note the use of `[XmlArray]` abd `[XmlArrayItem]` to deserialize the data correctly.
+
+```cs
+[XmlRoot(ElementName="Story")]
+public class Story { 
+
+   // Before
+
+   [XmlElement(ElementName="ObjectRoot")] 
+   public ObjectRoot ObjectRoot; 
+
+   [XmlElement(ElementName="GroupRoot")]
+   public GroupRoot GroupRoot;
+
+   [XmlElement(ElementName="TimelineRoot")] 
+   public TimelineRoot TimelineRoot;
+
+   [XmlElement(ElementName="PlacementRoot")] 
+   public PlacementRoot PlacementRoot; 
+
+   [XmlElement(ElementName="SoundRoot")] 
+   public SoundRoot SoundRoot;
+
+   [XmlElement(ElementName="ParticleActionRoot")] 
+   public ParticleActionRoot ParticleActionRoot; 
+
+   /* ... */
+
+   // After
+
+   [XmlArray(ElementName="ObjectRoot")]
+   [XmlArrayItem(ElementName="Object")] 
+   public List<Object> ObjectList;
+
+   [XmlArray(ElementName="GroupRoot")]
+   [XmlArrayItem(ElementName="Group")] 
+   public List<Group> GroupList;
+
+   [XmlArray(ElementName="TimelineRoot")]
+   [XmlArrayItem(ElementName="Timeline")] 
+   public List<Timeline> TimelineList;
+
+   [XmlArray(ElementName="PlacementRoot")]
+   [XmlArrayItem(ElementName="Placement")] 
+   public List<Placement> PlacementList;
+
+   [XmlArray(ElementName="SoundRoot")]
+   [XmlArrayItem(ElementName="Sound")] 
+   public List<Sound> SoundList;
+
+   [XmlArray(ElementName="ParticleActionRoot")]
+   [XmlArrayItem(ElementName="ParticleActionList")] 
+   public List<ParticleAction> ParticleActionList;
+
+   /* ... */
+}
+
+```
 
 ### Global
 
@@ -312,13 +373,15 @@ public class Group {
 }
 ```
 
+### SoundRef
+
+The `SoundRef` class falls in the same position as the [ObjectRef](#grouprootgroupobjectref) class. The `name` attribute has become the inner text of each `SoundRef` tag, the `SoundRef` property is now of type `string`, and the `SoundRef` class has been deleted.
+
+This change is present in `Object.SoundRef` and `TimedAction.SoundRef`.
+
 ## TODO
 
 ### Next Steps
-
-1) Make `SoundRef` just a string, not a class with `name` attribute
-2) The arrays in `*Root.cs` files can be moved into `Story.cs`, no need for the extra classes. Rename variables `*List`?
-3) Use [XmlArray("")] and [XmlArrayItem("")] tags wherever Lists are present (Need to do more research)
 
 ### Stuff to Figure Out
 

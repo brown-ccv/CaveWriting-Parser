@@ -17,7 +17,7 @@ public class TimedAction {
 	public TimerChange TimerChange; 
 
 	[XmlElement(ElementName="SoundRef")] 
-	public SoundRef SoundRef; 
+	public string SoundRef;
 
 	[XmlElement(ElementName="ObjectChange")] 
 	public ObjectChange ObjectChange; 

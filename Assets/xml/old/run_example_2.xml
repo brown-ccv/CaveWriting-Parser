@@ -63,7 +63,7 @@
        <TimelineRoot>
               <Timeline name="intro" start-immediately="false">
                     <TimedAction seconds-time="0.001">
-                            <SoundRef>title_audio</SoundRef>
+                            <SoundRef name="title_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="8.0">
                             <GroupRef name="title">

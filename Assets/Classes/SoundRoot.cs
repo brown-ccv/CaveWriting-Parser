@@ -1,10 +1,10 @@
-using UnityEngine;
-using System.Xml.Serialization;
-using System.Collections.Generic;
+// using UnityEngine;
+// using System.Xml.Serialization;
+// using System.Collections.Generic;
 
-[XmlRoot(ElementName="SoundRoot")]
-public class SoundRoot { 
+// [XmlRoot(ElementName="SoundRoot")]
+// public class SoundRoot { 
 
-	[XmlElement(ElementName="Sound")] 
-	public List<Sound> Sounds; 
-}
+// 	[XmlElement(ElementName="Sound")] 
+// 	public List<Sound> Sounds; 
+// }

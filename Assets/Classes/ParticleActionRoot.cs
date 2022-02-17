@@ -1,10 +1,10 @@
-using UnityEngine;
-using System.Xml.Serialization;
-using System.Collections.Generic;
+// using UnityEngine;
+// using System.Xml.Serialization;
+// using System.Collections.Generic;
 
-[XmlRoot(ElementName="ParticleActionRoot")]
-public class ParticleActionRoot { 
+// [XmlRoot(ElementName="ParticleActionRoot")]
+// public class ParticleActionRoot { 
 
-	[XmlElement(ElementName="ParticleActionList")] 
-	public List<ParticleActionList> ParticleActionLists;
-}
+// 	[XmlElement(ElementName="ParticleActionList")] 
+// 	public List<ParticleActionList> ParticleActionLists;
+// }
