@@ -1,0 +1,121 @@
+<Story version="8" last_xpath="/Story/TimelineRoot/Timeline[5] ">
+       <ObjectRoot>
+              <Object name="start_button">
+                     <Visible>true</Visible>
+                     <Color><r>255</r><g>255</g><b>255</b><a>255</a></Color>
+                     <Lighting>false</Lighting>
+                     <ClickThrough>false</ClickThrough>
+                     <AroundSelfAxis>false</AroundSelfAxis>
+                     <Scale>2.5</Scale>
+                     <Placement>
+                            <RelativeTo>Center</RelativeTo>
+                            <Position><x>0.0</x><y>1.5</y><z>-3.25</z></Position>
+                     </Placement>
+                     <Content>
+                            <Text horiz-align="center" vert-align="center" font="./fonts/Lucida.ttf" depth="15.0">
+                                   <text>IF I TOLD HIM</text>
+                            </Text>
+                     </Content>
+                     <LinkRoot>
+                            <Link>
+                                   <Enabled>true</Enabled>
+                                   <RemainEnabled>true</RemainEnabled>
+                                   <EnabledColor><r>255</r><g>255</g><b>255</b><a>255</a></EnabledColor>
+                                   <SelectedColor><r>0</r><g>0</g><b>0</b><a>255</a></SelectedColor>
+                                   <Actions>
+                                                 <TimerChange name="intro">
+                                                        <start />
+                                                 </TimerChange>
+                                          <Clicks>
+                                                 <NumClicks num_clicks="1" reset="false" />
+                                          </Clicks>
+                                   </Actions>
+                            </Link>
+                     </LinkRoot>
+              </Object>
+              <Object name="A Completed Portrait of Picasso">
+                     <Visible>true</Visible>
+                     <Color><r>255</r><g>255</g><b>255</b><a>255</a></Color>
+                     <Lighting>false</Lighting>
+                     <ClickThrough>false</ClickThrough>
+                     <AroundSelfAxis>false</AroundSelfAxis>
+                     <Scale>1.5</Scale>
+                     <Placement>
+                            <RelativeTo>Center</RelativeTo>
+                            <Position><x>0.0</x><y>1.5</y><z>-3.5</z></Position>
+                     </Placement>
+                     <Content>
+                            <Text horiz-align="center" vert-align="center" font="./fonts/Lucida.ttf" depth="0.0">
+                                   <text>A Completed Portrait of Picasso by Gertrude Stein</text>
+                            </Text>
+                     </Content>
+              </Object>
+       </ObjectRoot>
+
+
+       <GroupRoot>
+              <Group name="title">
+                     <ObjectRef>start_button</ObjectRef>
+                     <ObjectRef>A Completed Portrait of Picasso</ObjectRef>
+              </Group>
+       </GroupRoot>
+
+       <TimelineRoot>
+              <Timeline name="intro" start-immediately="false">
+                    <TimedAction seconds-time="0.001">
+                            <SoundRef>title_audio</SoundRef>
+                     </TimedAction>
+                     <TimedAction seconds-time="8.0">
+                            <GroupRef name="title">
+                                   <Transition duration="1.0">
+                                          <MoveRel>
+                                                 <Placement>
+                                                        <RelativeTo>Center</RelativeTo>
+                                                        <Position><x>0.0</x><y>0.0</y><z>-3.0</z></Position>
+                                                 </Placement>
+                                          </MoveRel>
+                                   </Transition>
+                            </GroupRef>
+                     </TimedAction>
+                     <TimedAction seconds-time="10">
+                            <GroupRef name="title">
+                                   <Transition duration="1.0">
+                                          <Visible>false</Visible>
+                                   </Transition>
+                            </GroupRef>
+                     </TimedAction>
+              </Timeline>
+       </TimelineRoot>
+
+       <PlacementRoot>
+              <Placement name="Center">
+                     <RelativeTo>Center</RelativeTo>
+                     <Position><x>0.0</x><y>0.0</y><z>0.0</z></Position>
+                            <Axis><Rotation><x>0.0</x><y>1.0</y><z>0.0</z></Rotation><Angle>0.0</Angle></Axis>
+              </Placement>
+       </PlacementRoot>
+
+       <SoundRoot>
+              <Sound name="title_audio" filename="./audio/title.mp3" autostart="false">
+                     <Mode>
+                            <Fixed />
+                     </Mode>
+                     <Repeat>
+                            <NoRepeat />
+                     </Repeat>
+                     <Settings freq="1.0" volume="1.0" pan="0.0" />
+              </Sound>
+              
+       </SoundRoot>
+
+       <Global>
+              <CameraPos far-clip="100.0">
+                     <Placement>
+                            <RelativeTo>Center</RelativeTo>
+                            <Position><x>0.0</x><y>1.5</y><z>6.0</z></Position>
+                     </Placement>
+              </CameraPos>
+              <Background><r>0</r><g> 0</g><b> 0</b><a>255</a></Background>
+              <WandNavigation allow-rotation="false" allow-movement="true" />
+       </Global>
+</Story>

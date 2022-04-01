@@ -1,26 +1,33 @@
 using UnityEngine;
 using System.Xml.Serialization;
+using System.Collections.Generic;
 
 [XmlRoot(ElementName="Story")]
 public class Story { 
 
-	[XmlElement(ElementName="ObjectRoot")] 
-	public ObjectRoot ObjectRoot; 
+	[XmlArray(ElementName="ObjectRoot")]
+	[XmlArrayItem(ElementName="Object")] 
+	public List<Object> ObjectRoot;
 
-	[XmlElement(ElementName="GroupRoot")] 
-	public GroupRoot GroupRoot; 
+	[XmlArray(ElementName="GroupRoot")]
+	[XmlArrayItem(ElementName="Group")] 
+	public List<Group> GroupRoot;
 
-	[XmlElement(ElementName="TimelineRoot")] 
-	public TimelineRoot TimelineRoot; 
+	[XmlArray(ElementName="TimelineRoot")]
+	[XmlArrayItem(ElementName="Timeline")]
+	public List<Timeline> TimelineRoot;
 
-	[XmlElement(ElementName="PlacementRoot")] 
-	public PlacementRoot PlacementRoot; 
+	[XmlArray(ElementName="PlacementRoot")]
+	[XmlArrayItem(ElementName="Placement")] 
+	public List<Placement> PlacementRoot;
 
-	[XmlElement(ElementName="SoundRoot")] 
-	public SoundRoot SoundRoot; 
+	[XmlArray(ElementName="SoundRoot")]
+	[XmlArrayItem(ElementName="Sound")] 
+	public List<Sound> SoundRoot;
 
-	[XmlElement(ElementName="ParticleActionRoot")] 
-	public ParticleActionRoot ParticleActionRoot; 
+	[XmlArray(ElementName="ParticleActionRoot")]
+	[XmlArrayItem(ElementName="ParticleActionList")] 
+	public List<ParticleAction> ParticleActionRoot;
 
 	[XmlElement(ElementName="Global")] 
 	public Global Global; 

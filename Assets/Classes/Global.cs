@@ -11,7 +11,7 @@ public class Global {
 	public CaveCameraPos CaveCameraPos; 
 
 	[XmlElement(ElementName="Background")] 
-	public Background Background; 
+	public Color32 BackgroundColor; 
 
 	[XmlElement(ElementName="WandNavigation")] 
 	public WandNavigation WandNavigation; 

@@ -16,7 +16,7 @@
                                    <text>IF I TOLD HIM</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -31,7 +31,7 @@
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="A Completed Portrait of Picasso">
                      <Visible>true</Visible>
@@ -68,7 +68,7 @@ by Gertrude Stein</text>
                                    <text>IF I TOLD HIM</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -83,7 +83,7 @@ by Gertrude Stein</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="shutter">
                      <Visible>false</Visible>
@@ -337,7 +337,7 @@ by Gertrude Stein</text>
                                    <text>X</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>false</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -352,7 +352,7 @@ by Gertrude Stein</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="pp_chunk_1">
                      <Visible>true</Visible>
@@ -680,7 +680,7 @@ if napoleon</text>
                                    <text>NOW</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>false</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -695,7 +695,7 @@ if napoleon</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="not">
                      <Visible>false</Visible>
@@ -1213,14 +1213,14 @@ N O N O N N O O O O O </text>
                                    <text>I</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>false</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
                                    <EnabledColor><r>255</r><g>255</g><b>255</b><a>255</a></EnabledColor>
                                    <SelectedColor><r>255</r><g>255</g><b>255</b><a>255</a></SelectedColor>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="right-deco">
                      <Visible>false</Visible>
@@ -1281,7 +1281,7 @@ N O N O N N O O O O O </text>
                                    <text>exact resemblance</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -1296,7 +1296,7 @@ N O N O N N O O O O O </text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="to_exact_resemblance">
                      <Visible>false</Visible>
@@ -1801,7 +1801,7 @@ N O N O N N O O O O O </text>
                                    <text>presently</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -1816,7 +1816,7 @@ N O N O N N O O O O O </text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="stanza_four_button_diff">
                      <Visible>false</Visible>
@@ -2192,7 +2192,7 @@ First as exactly As first as exactly</text>
                                    <text>X</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -2207,7 +2207,7 @@ First as exactly As first as exactly</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="rob">
                      <Visible>false</Visible>
@@ -2688,7 +2688,7 @@ First as exactly As first as exactly</text>
                                    <text>SAY SO</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>false</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -2703,7 +2703,7 @@ First as exactly As first as exactly</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="even">
                      <Visible>false</Visible>
@@ -3859,7 +3859,7 @@ denote</text>
                             </TimerChange>
                      </TimedAction>
                      <TimedAction seconds-time="0.001">
-                            <SoundRef>title_audio</SoundRef>
+                            <SoundRef name="title_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="4.0">
                             <GroupRef name="chunks">
@@ -3916,7 +3916,7 @@ denote</text>
               </Timeline>
               <Timeline name="stanza_one" start-immediately="false">
                      <TimedAction seconds-time="2.0">
-                            <SoundRef>stanza_one_sound</SoundRef>
+                            <SoundRef name="stanza_one_sound" />
                      </TimedAction>
                      <TimedAction seconds-time="0.5">
                             <ObjectChange name="stanza_one_start_button">
@@ -4256,7 +4256,7 @@ denote</text>
                             </ObjectChange>
                      </TimedAction>
                      <TimedAction seconds-time="1">
-                            <SoundRef>stanza_two_sound</SoundRef>
+                            <SoundRef name="stanza_two_sound" />
                      </TimedAction>
                      <TimedAction seconds-time="1.1">
                             <ObjectChange name="now_2">
@@ -4817,7 +4817,7 @@ denote</text>
                             </GroupRef>
                      </TimedAction>
                      <TimedAction seconds-time="1.0">
-                            <SoundRef>stanza_three_audio</SoundRef>
+                            <SoundRef name="stanza_three_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="1.5">
                             <GroupRef name="right wall">
@@ -5406,7 +5406,7 @@ denote</text>
               </Timeline>
               <Timeline name="stanza_five" start-immediately="false">
                      <TimedAction seconds-time="0.001">
-                            <SoundRef>stanza_five_audio</SoundRef>
+                            <SoundRef name="stanza_five_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="0.0">
                             <ObjectChange name="portrait">
@@ -5764,7 +5764,7 @@ denote</text>
               </Timeline>
               <Timeline name="stanza_six" start-immediately="false">
                      <TimedAction seconds-time="1.3">
-                            <SoundRef>stanza_six_audio</SoundRef>
+                            <SoundRef name="stanza_six_audio" />
                      </TimedAction>
                      <TimedAction seconds-time="1.3">
                             <ObjectChange name="I_land">
@@ -6442,7 +6442,7 @@ denote</text>
                             </MoveCave>
                      </TimedAction>
                      <TimedAction seconds-time="0.0">
-                            <SoundRef>gertrubience</SoundRef>
+                            <SoundRef name="gertrubience" />
                      </TimedAction>
                      <TimedAction seconds-time="10.0">
                             <TimerChange name="ambience">

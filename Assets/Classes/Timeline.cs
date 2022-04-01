@@ -5,8 +5,8 @@ using System.Collections.Generic;
 [XmlRoot(ElementName="Timeline")]
 public class Timeline { 
 
-	[XmlElement(ElementName="TimedActions")] 
-	public List<TimedActions> TimedActions; 
+	[XmlElement(ElementName="TimedAction")]
+	public List<TimedAction> TimedActions; 
 
 	[XmlAttribute(AttributeName="name")] 
 	public string Name; 

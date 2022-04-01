@@ -4,9 +4,9 @@ using System.Xml.Serialization;
 [XmlRoot(ElementName="LookAt")]
 public class LookAt { 
 
-	[XmlAttribute(AttributeName="target")] 
-	public string Target; 
+	[XmlElement(ElementName="Target")] 
+	public Vector3 Target; 
 
-	[XmlAttribute(AttributeName="up")] 
-	public string Up; 
+	[XmlElement(ElementName="Up")] 
+	public Vector3 Up; 
 }

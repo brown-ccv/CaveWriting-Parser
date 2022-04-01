@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Xml.Serialization;
 
 [XmlRoot(ElementName="TimedActions")]
-public class TimedActions { 
+public class TimedAction { 
 
 	[XmlElement(ElementName="GroupRef")] 
 	public GroupRef GroupRef; 
@@ -17,7 +17,7 @@ public class TimedActions {
 	public TimerChange TimerChange; 
 
 	[XmlElement(ElementName="SoundRef")] 
-	public SoundRef SoundRef; 
+	public string SoundRef;
 
 	[XmlElement(ElementName="ObjectChange")] 
 	public ObjectChange ObjectChange; 

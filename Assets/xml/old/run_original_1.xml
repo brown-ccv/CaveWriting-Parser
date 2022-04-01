@@ -16,7 +16,7 @@
                                    <text>IF I TOLD HIM</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -31,7 +31,7 @@
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="A Completed Portrait of Picasso">
                      <Visible>true</Visible>
@@ -68,7 +68,7 @@ by Gertrude Stein</text>
                                    <text>IF I TOLD HIM</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -83,7 +83,7 @@ by Gertrude Stein</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="shutter">
                      <Visible>false</Visible>
@@ -337,7 +337,7 @@ by Gertrude Stein</text>
                                    <text>X</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>false</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -352,7 +352,7 @@ by Gertrude Stein</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="pp_chunk_1">
                      <Visible>true</Visible>
@@ -680,7 +680,7 @@ if napoleon</text>
                                    <text>NOW</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>false</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -695,7 +695,7 @@ if napoleon</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="not">
                      <Visible>false</Visible>
@@ -1213,14 +1213,14 @@ N O N O N N O O O O O </text>
                                    <text>I</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>false</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
                                    <EnabledColor><r>255</r><g>255</g><b>255</b><a>255</a></EnabledColor>
                                    <SelectedColor><r>255</r><g>255</g><b>255</b><a>255</a></SelectedColor>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="right-deco">
                      <Visible>false</Visible>
@@ -1281,7 +1281,7 @@ N O N O N N O O O O O </text>
                                    <text>exact resemblance</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -1296,7 +1296,7 @@ N O N O N N O O O O O </text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="to_exact_resemblance">
                      <Visible>false</Visible>
@@ -1801,7 +1801,7 @@ N O N O N N O O O O O </text>
                                    <text>presently</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -1816,7 +1816,7 @@ N O N O N N O O O O O </text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="stanza_four_button_diff">
                      <Visible>false</Visible>
@@ -2192,7 +2192,7 @@ First as exactly As first as exactly</text>
                                    <text>X</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>true</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -2207,7 +2207,7 @@ First as exactly As first as exactly</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="rob">
                      <Visible>false</Visible>
@@ -2688,7 +2688,7 @@ First as exactly As first as exactly</text>
                                    <text>SAY SO</text>
                             </Text>
                      </Content>
-                     <Links>
+                     <LinkRoot>
                             <Link>
                                    <Enabled>false</Enabled>
                                    <RemainEnabled>true</RemainEnabled>
@@ -2703,7 +2703,7 @@ First as exactly As first as exactly</text>
                                           </Clicks>
                                    </Actions>
                             </Link>
-                     </Links>
+                     </LinkRoot>
               </Object>
               <Object name="even">
                      <Visible>false</Visible>
@@ -3617,258 +3617,258 @@ denote</text>
        </ObjectRoot>
        <GroupRoot>
               <Group name="chunks">
-                            <ObjectRef>pp_chunk_1</ObjectRef>
-                            <ObjectRef>pp_chunk_2</ObjectRef>
-                            <ObjectRef>pp_chunk_3</ObjectRef>
+                            <Objects name="pp_chunk_1" />
+                            <Objects name="pp_chunk_2" />
+                            <Objects name="pp_chunk_3" />
               </Group>
               <Group name="title">
-                            <ObjectRef>start_button</ObjectRef>
-                            <ObjectRef>A Completed Portrait of Picasso</ObjectRef>
+                            <Objects name="start_button" />
+                            <Objects name="A Completed Portrait of Picasso" />
               </Group>
               <Group name="stanza_one_group">
-                            <ObjectRef>stanza_one_start_button</ObjectRef>
-                            <ObjectRef>would_he_like_it</ObjectRef>
-                            <ObjectRef>if_I_told_him</ObjectRef>
-                            <ObjectRef>would_napoleon_1</ObjectRef>
-                            <ObjectRef>would_napoleon_2</ObjectRef>
-                            <ObjectRef>would_would_he_like_it</ObjectRef>
-                            <ObjectRef>if_napoleon</ObjectRef>
-                            <ObjectRef>woulds</ObjectRef>
-                            <ObjectRef>if_i_told_him_2</ObjectRef>
-                            <ObjectRef>if_i_told_hims</ObjectRef>
-                            <ObjectRef>if_napoleons</ObjectRef>
+                            <Objects name="stanza_one_start_button" />
+                            <Objects name="would_he_like_it" />
+                            <Objects name="if_I_told_him" />
+                            <Objects name="would_napoleon_1" />
+                            <Objects name="would_napoleon_2" />
+                            <Objects name="would_would_he_like_it" />
+                            <Objects name="if_napoleon" />
+                            <Objects name="woulds" />
+                            <Objects name="if_i_told_him_2" />
+                            <Objects name="if_i_told_hims" />
+                            <Objects name="if_napoleons" />
               </Group>
               <Group name="ANDSOALSO">
-                            <ObjectRef>also_fall3</ObjectRef>
-                            <ObjectRef>and_fall16</ObjectRef>
-                            <ObjectRef>so_fall10</ObjectRef>
-                            <ObjectRef>and_fall15</ObjectRef>
-                            <ObjectRef>so_fall9</ObjectRef>
-                            <ObjectRef>and_fall14</ObjectRef>
-                            <ObjectRef>also_fall2</ObjectRef>
-                            <ObjectRef>also_fall1</ObjectRef>
-                            <ObjectRef>and_fall12</ObjectRef>
-                            <ObjectRef>so_fall8</ObjectRef>
-                            <ObjectRef>and_fall11</ObjectRef>
-                            <ObjectRef>shut_fall5</ObjectRef>
-                            <ObjectRef>shutters_fall9</ObjectRef>
-                            <ObjectRef>so_fall7</ObjectRef>
-                            <ObjectRef>and_fall10</ObjectRef>
-                            <ObjectRef>so_fall6</ObjectRef>
-                            <ObjectRef>and_fall9</ObjectRef>
-                            <ObjectRef>shutters_fall8</ObjectRef>
-                            <ObjectRef>and_fall8</ObjectRef>
-                            <ObjectRef>shut_fall4</ObjectRef>
-                            <ObjectRef>shutters_fall7</ObjectRef>
-                            <ObjectRef>so_fall5</ObjectRef>
-                            <ObjectRef>and_fall7</ObjectRef>
-                            <ObjectRef>shut_fall3</ObjectRef>
-                            <ObjectRef>shutters_fall6</ObjectRef>
-                            <ObjectRef>so_fall4</ObjectRef>
-                            <ObjectRef>and_fall6</ObjectRef>
-                            <ObjectRef>shutters_fall5</ObjectRef>
-                            <ObjectRef>so_fall3</ObjectRef>
-                            <ObjectRef>and_fall5</ObjectRef>
-                            <ObjectRef>so_fall2</ObjectRef>
-                            <ObjectRef>and_fall4</ObjectRef>
-                            <ObjectRef>shutters_fall4</ObjectRef>
-                            <ObjectRef>and_fall3</ObjectRef>
-                            <ObjectRef>shut_fall2</ObjectRef>
-                            <ObjectRef>shutters_fall3</ObjectRef>
-                            <ObjectRef>so_fall1</ObjectRef>
-                            <ObjectRef>and_fall2</ObjectRef>
-                            <ObjectRef>shutters_fall2</ObjectRef>
-                            <ObjectRef>and_fall1</ObjectRef>
-                            <ObjectRef>shut_fall1</ObjectRef>
-                            <ObjectRef>and_fall13</ObjectRef>
-                            <ObjectRef>shutters_fall1</ObjectRef>
+                            <Objects name="also_fall3" />
+                            <Objects name="and_fall16" />
+                            <Objects name="so_fall10" />
+                            <Objects name="and_fall15" />
+                            <Objects name="so_fall9" />
+                            <Objects name="and_fall14" />
+                            <Objects name="also_fall2" />
+                            <Objects name="also_fall1" />
+                            <Objects name="and_fall12" />
+                            <Objects name="so_fall8" />
+                            <Objects name="and_fall11" />
+                            <Objects name="shut_fall5" />
+                            <Objects name="shutters_fall9" />
+                            <Objects name="so_fall7" />
+                            <Objects name="and_fall10" />
+                            <Objects name="so_fall6" />
+                            <Objects name="and_fall9" />
+                            <Objects name="shutters_fall8" />
+                            <Objects name="and_fall8" />
+                            <Objects name="shut_fall4" />
+                            <Objects name="shutters_fall7" />
+                            <Objects name="so_fall5" />
+                            <Objects name="and_fall7" />
+                            <Objects name="shut_fall3" />
+                            <Objects name="shutters_fall6" />
+                            <Objects name="so_fall4" />
+                            <Objects name="and_fall6" />
+                            <Objects name="shutters_fall5" />
+                            <Objects name="so_fall3" />
+                            <Objects name="and_fall5" />
+                            <Objects name="so_fall2" />
+                            <Objects name="and_fall4" />
+                            <Objects name="shutters_fall4" />
+                            <Objects name="and_fall3" />
+                            <Objects name="shut_fall2" />
+                            <Objects name="shutters_fall3" />
+                            <Objects name="so_fall1" />
+                            <Objects name="and_fall2" />
+                            <Objects name="shutters_fall2" />
+                            <Objects name="and_fall1" />
+                            <Objects name="shut_fall1" />
+                            <Objects name="and_fall13" />
+                            <Objects name="shutters_fall1" />
               </Group>
               <Group name="fountain_test">
-                            <ObjectRef>shutters_fall1</ObjectRef>
-                            <ObjectRef>shut_fall1</ObjectRef>
-                            <ObjectRef>and_fall1</ObjectRef>
-                            <ObjectRef>so_fall1</ObjectRef>
-                            <ObjectRef>also_fall1</ObjectRef>
+                            <Objects name="shutters_fall1" />
+                            <Objects name="shut_fall1" />
+                            <Objects name="and_fall1" />
+                            <Objects name="so_fall1" />
+                            <Objects name="also_fall1" />
               </Group>
               <Group name="Kings_Queens">
-                            <ObjectRef>kings4_right</ObjectRef>
-                            <ObjectRef>kings4_left</ObjectRef>
-                            <ObjectRef>kings3_right</ObjectRef>
-                            <ObjectRef>kings3_left</ObjectRef>
-                            <ObjectRef>kings2_right</ObjectRef>
-                            <ObjectRef>kings2_left</ObjectRef>
-                            <ObjectRef>kings1_right</ObjectRef>
-                            <ObjectRef>kings1_left</ObjectRef>
-                            <ObjectRef>queens4</ObjectRef>
-                            <ObjectRef>queens3</ObjectRef>
-                            <ObjectRef>queens2</ObjectRef>
-                            <ObjectRef>queens1</ObjectRef>
+                            <Objects name="kings4_right" />
+                            <Objects name="kings4_left" />
+                            <Objects name="kings3_right" />
+                            <Objects name="kings3_left" />
+                            <Objects name="kings2_right" />
+                            <Objects name="kings2_left" />
+                            <Objects name="kings1_right" />
+                            <Objects name="kings1_left" />
+                            <Objects name="queens4" />
+                            <Objects name="queens3" />
+                            <Objects name="queens2" />
+                            <Objects name="queens1" />
               </Group>
               <Group name="for this is so because">
-                            <ObjectRef>for this</ObjectRef>
-                            <ObjectRef>is so</ObjectRef>
-                            <ObjectRef>because</ObjectRef>
+                            <Objects name="for this" />
+                            <Objects name="is so" />
+                            <Objects name="because" />
               </Group>
               <Group name="right wall">
-                            <ObjectRef>right-deco</ObjectRef>
-                            <ObjectRef>right_wall</ObjectRef>
-                            <ObjectRef>right-deco-eyes-ears</ObjectRef>
+                            <Objects name="right-deco" />
+                            <Objects name="right_wall" />
+                            <Objects name="right-deco-eyes-ears" />
               </Group>
               <Group name="left wall">
-                            <ObjectRef>left_wall</ObjectRef>
-                            <ObjectRef>left-deco</ObjectRef>
-                            <ObjectRef>left-deco-eyes-ears</ObjectRef>
+                            <Objects name="left_wall" />
+                            <Objects name="left-deco" />
+                            <Objects name="left-deco-eyes-ears" />
               </Group>
               <Group name="now_actively_repeat_it_all">
-                            <ObjectRef>now_actively_repeat_it_all_1</ObjectRef>
-                            <ObjectRef>now_actively_repeat_it_all_2</ObjectRef>
-                            <ObjectRef>now_actively_repeat_it_all_3</ObjectRef>
-                            <ObjectRef>now_actively_repeat_it_all_4</ObjectRef>
+                            <Objects name="now_actively_repeat_it_all_1" />
+                            <Objects name="now_actively_repeat_it_all_2" />
+                            <Objects name="now_actively_repeat_it_all_3" />
+                            <Objects name="now_actively_repeat_it_all_4" />
               </Group>
               <Group name="word_napoleon">
-                            <ObjectRef>as_a_resemblance_to_him</ObjectRef>
-                            <ObjectRef>who_comes_first</ObjectRef>
-                            <ObjectRef>who_comes_too_coming_coming_too</ObjectRef>
-                            <ObjectRef>who goes there as they go they share</ObjectRef>
-                            <ObjectRef>who shares all all is as all as as yet or as yet</ObjectRef>
-                            <ObjectRef>Now to date now to date</ObjectRef>
-                            <ObjectRef>now and now</ObjectRef>
-                            <ObjectRef>and date and the date</ObjectRef>
-                            <ObjectRef>who came first 1</ObjectRef>
-                            <ObjectRef>who came first 2</ObjectRef>
-                            <ObjectRef>who came first 3</ObjectRef>
+                            <Objects name="as_a_resemblance_to_him" />
+                            <Objects name="who_comes_first" />
+                            <Objects name="who_comes_too_coming_coming_too" />
+                            <Objects name="who goes there as they go they share" />
+                            <Objects name="who shares all all is as all as as yet or as yet" />
+                            <Objects name="Now to date now to date" />
+                            <Objects name="now and now" />
+                            <Objects name="and date and the date" />
+                            <Objects name="who came first 1" />
+                            <Objects name="who came first 2" />
+                            <Objects name="who came first 3" />
               </Group>
               <Group name="david_storm">
-                            <ObjectRef>david</ObjectRef>
+                            <Objects name="david" />
               </Group>
               <Group name="he_storm">
-                            <ObjectRef>he</ObjectRef>
-                            <ObjectRef>&amp;</ObjectRef>
+                            <Objects name="he" />
+                            <Objects name="&amp;" />
               </Group>
               <Group name="is_storm">
-                            <ObjectRef>is</ObjectRef>
+                            <Objects name="is" />
               </Group>
               <Group name="hit the wall">
-                            <ObjectRef>exactly</ObjectRef>
-                            <ObjectRef>first</ObjectRef>
-                            <ObjectRef>they do</ObjectRef>
+                            <Objects name="exactly" />
+                            <Objects name="first" />
+                            <Objects name="they do" />
               </Group>
               <Group name="napoleon">
-                            <ObjectRef>napoleon_red</ObjectRef>
-                            <ObjectRef>napoleon_blue</ObjectRef>
-                            <ObjectRef>napoleon_green</ObjectRef>
-                            <ObjectRef>napoleon_outline</ObjectRef>
+                            <Objects name="napoleon_red" />
+                            <Objects name="napoleon_blue" />
+                            <Objects name="napoleon_green" />
+                            <Objects name="napoleon_outline" />
               </Group>
               <Group name="quote_text">
-                            <ObjectRef>quote</ObjectRef>
-                            <ObjectRef>rob</ObjectRef>
-                            <ObjectRef>quoteable</ObjectRef>
-                            <ObjectRef>can_curls</ObjectRef>
-                            <ObjectRef>curls2</ObjectRef>
+                            <Objects name="quote" />
+                            <Objects name="rob" />
+                            <Objects name="quoteable" />
+                            <Objects name="can_curls" />
+                            <Objects name="curls2" />
               </Group>
               <Group name="curls">
-                            <ObjectRef>curl_image6</ObjectRef>
-                            <ObjectRef>curl_image1</ObjectRef>
-                            <ObjectRef>curl_image2</ObjectRef>
-                            <ObjectRef>curl_image3</ObjectRef>
-                            <ObjectRef>curl_image4</ObjectRef>
-                            <ObjectRef>curl_image5</ObjectRef>
-                            <ObjectRef>curl_image7</ObjectRef>
+                            <Objects name="curl_image6" />
+                            <Objects name="curl_image1" />
+                            <Objects name="curl_image2" />
+                            <Objects name="curl_image3" />
+                            <Objects name="curl_image4" />
+                            <Objects name="curl_image5" />
+                            <Objects name="curl_image7" />
               </Group>
               <Group name="wasthere">
-                            <ObjectRef>was_particle</ObjectRef>
-                            <ObjectRef>there_particle</ObjectRef>
-                            <ObjectRef>what_particle</ObjectRef>
-                            <ObjectRef>as_particle</ObjectRef>
+                            <Objects name="was_particle" />
+                            <Objects name="there_particle" />
+                            <Objects name="what_particle" />
+                            <Objects name="as_particle" />
               </Group>
               <Group name="land">
-                            <ObjectRef>1</ObjectRef>
-                            <ObjectRef>I_land</ObjectRef>
-                            <ObjectRef>2</ObjectRef>
-                            <ObjectRef>I_land2</ObjectRef>
-                            <ObjectRef>3</ObjectRef>
-                            <ObjectRef>the_land</ObjectRef>
-                            <ObjectRef>I_land2</ObjectRef>
-                            <ObjectRef>3_2</ObjectRef>
-                            <ObjectRef>the_land2</ObjectRef>
-                            <ObjectRef>the_land2b</ObjectRef>
-                            <ObjectRef>2_2</ObjectRef>
-                            <ObjectRef>I_land3</ObjectRef>
-                            <ObjectRef>2_3</ObjectRef>
-                            <ObjectRef>I_land4</ObjectRef>
-                            <ObjectRef>I_land5</ObjectRef>
-                            <ObjectRef>1_2</ObjectRef>
-                            <ObjectRef>2_4</ObjectRef>
-                            <ObjectRef>I_land6</ObjectRef>
-                            <ObjectRef>3_2_copy</ObjectRef>
-                            <ObjectRef>the_land2b_copy</ObjectRef>
-                            <ObjectRef>the_land2_copy</ObjectRef>
+                            <Objects name="1" />
+                            <Objects name="I_land" />
+                            <Objects name="2" />
+                            <Objects name="I_land2" />
+                            <Objects name="3" />
+                            <Objects name="the_land" />
+                            <Objects name="I_land2" />
+                            <Objects name="3_2" />
+                            <Objects name="the_land2" />
+                            <Objects name="the_land2b" />
+                            <Objects name="2_2" />
+                            <Objects name="I_land3" />
+                            <Objects name="2_3" />
+                            <Objects name="I_land4" />
+                            <Objects name="I_land5" />
+                            <Objects name="1_2" />
+                            <Objects name="2_4" />
+                            <Objects name="I_land6" />
+                            <Objects name="3_2_copy" />
+                            <Objects name="the_land2b_copy" />
+                            <Objects name="the_land2_copy" />
               </Group>
               <Group name="frames">
-                            <ObjectRef>frame_wall</ObjectRef>
-                            <ObjectRef>they_cannot</ObjectRef>
-                            <ObjectRef>a_note</ObjectRef>
-                            <ObjectRef>a_float</ObjectRef>
-                            <ObjectRef>they_dote</ObjectRef>
-                            <ObjectRef>they_as_denote</ObjectRef>
+                            <Objects name="frame_wall" />
+                            <Objects name="they_cannot" />
+                            <Objects name="a_note" />
+                            <Objects name="a_float" />
+                            <Objects name="they_dote" />
+                            <Objects name="they_as_denote" />
               </Group>
               <Group name="pp_party_left">
-                            <ObjectRef>chunks_flashing_1</ObjectRef>
-                            <ObjectRef>chunks_flashing_2</ObjectRef>
-                            <ObjectRef>chunks_flashing_3</ObjectRef>
+                            <Objects name="chunks_flashing_1" />
+                            <Objects name="chunks_flashing_2" />
+                            <Objects name="chunks_flashing_3" />
               </Group>
               <Group name="pp_party_right">
-                            <ObjectRef>chunks_flashing_1b</ObjectRef>
-                            <ObjectRef>chunks_flashing_2b</ObjectRef>
-                            <ObjectRef>chunks_flashing_3b</ObjectRef>
+                            <Objects name="chunks_flashing_1b" />
+                            <Objects name="chunks_flashing_2b" />
+                            <Objects name="chunks_flashing_3b" />
               </Group>
               <Group name="all_minus_biggie">
-                            <ObjectRef>kings_return5</ObjectRef>
-                            <ObjectRef>kings_return4</ObjectRef>
-                            <ObjectRef>kings_return3</ObjectRef>
-                            <ObjectRef>kings_return2</ObjectRef>
-                            <ObjectRef>kings_return1</ObjectRef>
-                            <ObjectRef>eye_pic</ObjectRef>
-                            <ObjectRef>frame_wall</ObjectRef>
-                            <ObjectRef>frame_left_return</ObjectRef>
-                            <ObjectRef>frame_right_return</ObjectRef>
-                            <ObjectRef>they_as_denote</ObjectRef>
-                            <ObjectRef>a_float</ObjectRef>
-                            <ObjectRef>they_dote</ObjectRef>
-                            <ObjectRef>a_note</ObjectRef>
-                            <ObjectRef>they_cannot</ObjectRef>
+                            <Objects name="kings_return5" />
+                            <Objects name="kings_return4" />
+                            <Objects name="kings_return3" />
+                            <Objects name="kings_return2" />
+                            <Objects name="kings_return1" />
+                            <Objects name="eye_pic" />
+                            <Objects name="frame_wall" />
+                            <Objects name="frame_left_return" />
+                            <Objects name="frame_right_return" />
+                            <Objects name="they_as_denote" />
+                            <Objects name="a_float" />
+                            <Objects name="they_dote" />
+                            <Objects name="a_note" />
+                            <Objects name="they_cannot" />
               </Group>
               <Group name="X_parts">
-                            <ObjectRef>X_part</ObjectRef>
-                            <ObjectRef>X_part2</ObjectRef>
-                            <ObjectRef>X_part3</ObjectRef>
+                            <Objects name="X_part" />
+                            <Objects name="X_part2" />
+                            <Objects name="X_part3" />
               </Group>
        </GroupRoot>
        <TimelineRoot>
               <Timeline name="intro" start-immediately="false">
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="ANDSOALSO">
                                    <Transition duration="0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <TimerChange name="ambience">
                                    <start_if_not_started />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.001">
-                            <SoundRef>title_audio</SoundRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="4.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.001">
+                            <SoundRef name="title_audio" />
+                     </TimedActions>
+                     <TimedActions seconds-time="4.0">
                             <GroupRef name="chunks">
                                    <Transition duration="5.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="4.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="4.0">
                             <GroupRef name="chunks">
                                    <Transition duration="10.0">
                                           <MoveRel>
@@ -3879,22 +3879,22 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.0">
                             <ObjectChange name="start_button">
                                    <Transition duration="0.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.0">
                             <ObjectChange name="stanza_one_start_button">
                                    <Transition duration="0.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.0">
                             <GroupRef name="title">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -3905,20 +3905,20 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="10">
+                     </TimedActions>
+                     <TimedActions seconds-time="10">
                             <GroupRef name="title">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="stanza_one" start-immediately="false">
-                     <TimedAction seconds-time="2.0">
-                            <SoundRef>stanza_one_sound</SoundRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.5">
+                     <TimedActions seconds-time="2.0">
+                            <SoundRef name="stanza_one_sound" />
+                     </TimedActions>
+                     <TimedActions seconds-time="0.5">
                             <ObjectChange name="stanza_one_start_button">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -3929,123 +3929,123 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.3">
                             <ObjectChange name="would_he_like_it">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="4.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="4.8">
                             <ObjectChange name="if_I_told_him">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.3">
                             <ObjectChange name="would_napoleon_1">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.9">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.9">
                             <ObjectChange name="would_napoleon_2">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.6">
                             <ObjectChange name="would_would_he_like_it">
                                    <Transition duration="1.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.3">
                             <ObjectChange name="if_napoleon">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="12.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="12.5">
                             <ObjectChange name="woulds">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13">
+                     </TimedActions>
+                     <TimedActions seconds-time="13">
                             <ObjectChange name="if_i_told_hims">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="15.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="15.0">
                             <ObjectChange name="if_Napoleons">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="11.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="11.0">
                             <TimerChange name="stanza_one_helper">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="18.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="18.0">
                             <ObjectChange name="if_napoleons">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="22.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="22.0">
                             <TimerChange name="stanza_one_helper">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="29.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="29.3">
                             <ObjectChange name="now">
                                    <Transition duration="0.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="29.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="29.6">
                             <ObjectChange name="not">
                                    <Transition duration="0.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="30">
+                     </TimedActions>
+                     <TimedActions seconds-time="30">
                             <ObjectChange name="not">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="30.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="30.5">
                             <ObjectChange name="and">
                                    <Transition duration=".75">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="32">
+                     </TimedActions>
+                     <TimedActions seconds-time="32">
                             <ObjectChange name="and">
                                    <Transition duration="0.25">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="32.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="32.5">
                             <ObjectChange name="now">
                                    <Transition duration="0.0">
                                           <LinkChange>
@@ -4053,8 +4053,8 @@ denote</text>
                                           </LinkChange>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="32.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="32.5">
                             <ObjectChange name="now">
                                    <Transition duration="2.0">
                                           <MoveRel>
@@ -4065,45 +4065,45 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="stanza_one_helper" start-immediately="false">
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="if_I_told_him">
                                    <Transition duration="1.0">
                                           <Scale>3.0</Scale>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.0">
                             <ObjectChange name="if_I_told_him">
                                    <Transition duration="1.0">
                                           <Scale>2.0</Scale>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.5">
                             <ObjectChange name="would_he_like_it">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="4.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="4.0">
                             <ObjectChange name="would_he_like_it">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.5">
                             <ObjectChange name="if_napoleon">
                                    <Transition duration=".5">
                                           <Scale>4.0</Scale>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="6.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="6.7">
                             <ObjectChange name="would_he_like_it">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4114,10 +4114,10 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="stanza_two_helper" start-immediately="false">
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="stanza_one_group">
                                    <Transition duration="5.0">
                                           <Movement>
@@ -4128,15 +4128,15 @@ denote</text>
                                           </Movement>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="4.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="4.0">
                             <GroupRef name="stanza_one_group">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="6.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="6.0">
                             <ObjectChange name="now">
                                    <Transition duration="2.0">
                                           <MoveRel>
@@ -4148,8 +4148,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.0">
                             <ObjectChange name="now">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4160,8 +4160,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.0">
                             <ObjectChange name="cmpl_prt_L">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4172,8 +4172,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.0">
                             <ObjectChange name="blinders_L">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4184,22 +4184,22 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.0">
                             <ObjectChange name="cmpl_prt_L">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.0">
                             <ObjectChange name="blinders_L">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9">
+                     </TimedActions>
+                     <TimedActions seconds-time="9">
                             <ObjectChange name="blinders_R">
                                    <Transition duration="0">
                                           <LinkChange>
@@ -4207,31 +4207,31 @@ denote</text>
                                           </LinkChange>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.5">
                             <ObjectChange name="now">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="stanza_two" start-immediately="false">
-                     <TimedAction seconds-time="0.5">
+                     <TimedActions seconds-time="0.5">
                             <ObjectChange name="cmpl_prt_3">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.5">
                             <ObjectChange name="blinders_R">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.5">
                             <ObjectChange name="cmpl_prt_3">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4242,8 +4242,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.5">
                             <ObjectChange name="blinders_R">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4254,88 +4254,88 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1">
-                            <SoundRef>stanza_two_sound</SoundRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="1">
+                            <SoundRef name="stanza_two_sound" />
+                     </TimedActions>
+                     <TimedActions seconds-time="1.1">
                             <ObjectChange name="now_2">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.4">
                             <ObjectChange name="kings1_right">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.4">
                             <ObjectChange name="kings1_left">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.7">
                             <ObjectChange name="exactly_STANZA2">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.8">
                             <ObjectChange name="kings2_left">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.8">
                             <ObjectChange name="kings2_right">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.2">
                             <ObjectChange name="kings3_left">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.2">
                             <ObjectChange name="kings3_right">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.6">
                             <ObjectChange name="kings4_left">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.6">
                             <ObjectChange name="kings4_right">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.2">
                             <ObjectChange name="feeling_full">
                                    <Transition duration="2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.2">
                             <ObjectChange name="feeling_full">
                                    <Transition duration="4">
                                           <MoveRel>
@@ -4346,15 +4346,15 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.5">
                             <ObjectChange name="exactitude_STANZA2">
                                    <Transition duration="2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.5">
                             <ObjectChange name="exactitude_STANZA2">
                                    <Transition duration="3">
                                           <MoveRel>
@@ -4365,15 +4365,15 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="6.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="6.2">
                             <ObjectChange name="feeling_full">
                                    <Transition duration="1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7">
+                     </TimedActions>
+                     <TimedActions seconds-time="7">
                             <ObjectChange name="frame_R">
                                    <Transition duration="2.0">
                                           <MoveRel>
@@ -4384,8 +4384,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7">
+                     </TimedActions>
+                     <TimedActions seconds-time="7">
                             <ObjectChange name="frame_L">
                                    <Transition duration="2.0">
                                           <MoveRel>
@@ -4396,15 +4396,15 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7">
+                     </TimedActions>
+                     <TimedActions seconds-time="7">
                             <ObjectChange name="frame_L">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7">
+                     </TimedActions>
+                     <TimedActions seconds-time="7">
                             <ObjectChange name="frame_C">
                                    <Transition duration="2.0">
                                           <MoveRel>
@@ -4415,50 +4415,50 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7">
+                     </TimedActions>
+                     <TimedActions seconds-time="7">
                             <ObjectChange name="frame_R">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7">
+                     </TimedActions>
+                     <TimedActions seconds-time="7">
                             <ObjectChange name="frame_C">
                                    <Transition duration="3">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.0">
                             <ObjectChange name="exactitude_STANZA2">
                                    <Transition duration="1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.0">
                             <ObjectChange name="now_2">
                                    <Transition duration=".7">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.5">
                             <ObjectChange name="exactly_STANZA2">
                                    <Transition duration=".7">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.1">
                             <ObjectChange name="so_">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.1">
                             <ObjectChange name="so_">
                                    <Transition duration="3">
                                           <MoveRel>
@@ -4469,15 +4469,15 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.5">
                             <ObjectChange name="to_beseech">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.5">
                             <ObjectChange name="to_beseech">
                                    <Transition duration="3">
                                           <MoveRel>
@@ -4488,15 +4488,15 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8">
+                     </TimedActions>
+                     <TimedActions seconds-time="8">
                             <ObjectChange name="you">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8">
+                     </TimedActions>
+                     <TimedActions seconds-time="8">
                             <ObjectChange name="you">
                                    <Transition duration="3">
                                           <MoveRel>
@@ -4507,8 +4507,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.3">
                             <ObjectChange name="as_full">
                                    <Transition duration="3">
                                           <MoveRel>
@@ -4519,22 +4519,22 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.3">
                             <ObjectChange name="as_full">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.7">
                             <ObjectChange name="as_for">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.7">
                             <ObjectChange name="as_for">
                                    <Transition duration="3">
                                           <MoveRel>
@@ -4545,126 +4545,126 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.1">
                             <ObjectChange name="so_">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.5">
                             <ObjectChange name="to_beseech">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.9">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.9">
                             <ObjectChange name="you">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.1">
                             <ObjectChange name="as_full">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.3">
                             <ObjectChange name="as_for">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="11">
+                     </TimedActions>
+                     <TimedActions seconds-time="11">
                             <ObjectChange name="shutter2">
                                    <Transition duration="4">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="11">
+                     </TimedActions>
+                     <TimedActions seconds-time="11">
                             <ObjectChange name="shutter">
                                    <Transition duration="4">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="14.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="14.5">
                             <ObjectChange name="queens1">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="14.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="14.7">
                             <ObjectChange name="queens2">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="14.9">
+                     </TimedActions>
+                     <TimedActions seconds-time="14.9">
                             <ObjectChange name="queens3">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="15.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="15.1">
                             <ObjectChange name="queens4">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="14">
+                     </TimedActions>
+                     <TimedActions seconds-time="14">
                             <TimerChange name="shutters">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="19.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="19.5">
                             <TimerChange name="shutters">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="24">
+                     </TimedActions>
+                     <TimedActions seconds-time="24">
                             <TimerChange name="shutters">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="28.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="28.5">
                             <TimerChange name="shutters">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="15">
+                     </TimedActions>
+                     <TimedActions seconds-time="15">
                             <ObjectChange name="fountain">
                                    <Transition duration="3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="15">
+                     </TimedActions>
+                     <TimedActions seconds-time="15">
                             <GroupRef name="fountain_test">
                                    <Transition duration="0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="30">
+                     </TimedActions>
+                     <TimedActions seconds-time="30">
                             <ObjectChange name="fountain">
                                    <Transition duration="5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="33">
+                     </TimedActions>
+                     <TimedActions seconds-time="33">
                             <ObjectChange name="shutter">
                                    <Transition duration="3">
                                           <MoveRel>
@@ -4675,8 +4675,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="33">
+                     </TimedActions>
+                     <TimedActions seconds-time="33">
                             <ObjectChange name="shutter2">
                                    <Transition duration="3">
                                           <MoveRel>
@@ -4687,8 +4687,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="31">
+                     </TimedActions>
+                     <TimedActions seconds-time="31">
                             <GroupRef name="Kings_Queens">
                                    <Transition duration="4">
                                           <MoveRel>
@@ -4699,38 +4699,38 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="31">
+                     </TimedActions>
+                     <TimedActions seconds-time="31">
                             <GroupRef name="Kings_Queens">
                                    <Transition duration="4">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="33">
+                     </TimedActions>
+                     <TimedActions seconds-time="33">
                             <ObjectChange name="shutter2">
                                    <Transition duration="4">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="33">
+                     </TimedActions>
+                     <TimedActions seconds-time="33">
                             <ObjectChange name="shutter">
                                    <Transition duration="4">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="37.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="37.0">
                             <ObjectChange name="exact_resemblance">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="shutters" start-immediately="false">
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="shutter">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4741,8 +4741,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="shutter2">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4753,8 +4753,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.5">
                             <ObjectChange name="shutter2">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4765,8 +4765,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.5">
                             <ObjectChange name="shutter">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4777,10 +4777,10 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="stanza_three" start-immediately="false">
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="napoleon">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4791,8 +4791,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="left wall">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4803,8 +4803,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="right wall">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -4815,11 +4815,11 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.0">
-                            <SoundRef>stanza_three_audio</SoundRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.0">
+                            <SoundRef name="stanza_three_audio" />
+                     </TimedActions>
+                     <TimedActions seconds-time="1.5">
                             <GroupRef name="right wall">
                                    <Transition duration="26.0">
                                           <MoveRel>
@@ -4830,8 +4830,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.5">
                             <GroupRef name="left wall">
                                    <Transition duration="26.0">
                                           <MoveRel>
@@ -4842,8 +4842,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.5">
                             <GroupRef name="napoleon">
                                    <Transition duration="26.0">
                                           <MoveRel>
@@ -4854,295 +4854,295 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.5">
                             <ObjectChange name="exact_resemblance">
                                    <Transition duration="0.3">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.8">
                             <ObjectChange name="to_exact_resemblance">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.8">
                             <ObjectChange name="to_exact_resemblance">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="4.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="4.4">
                             <ObjectChange name="the_exact_resemblance">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.4">
                             <ObjectChange name="the_exact_resemblance">
                                    <Transition duration="0.3">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.7">
                             <ObjectChange name="as_exact_as_a_resemblance">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.5">
                             <ObjectChange name="as_exact_as_a_resemblance">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.0">
                             <ObjectChange name="exactly_as_resembling">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.7">
                             <ObjectChange name="exactly_as_resembling">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.2">
                             <ObjectChange name="exactly_resembling">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.0">
                             <ObjectChange name="exactly_resembling">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.5">
                             <ObjectChange name="exactly_in_resemblance">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="11.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="11.5">
                             <ObjectChange name="exactly_in_resemblance">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="12.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="12.0">
                             <ObjectChange name="exactly_a_resemblance">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="13.6">
                             <ObjectChange name="exactly_a_resemblance">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="14.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="14.1">
                             <ObjectChange name="exactly_and_resemblance">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="15.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="15.0">
                             <ObjectChange name="exactly_and_resemblance">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="16.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="16.0">
                             <ObjectChange name="for this">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="16.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="16.5">
                             <ObjectChange name="is so">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="17.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="17.0">
                             <ObjectChange name="because">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="18.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="18.0">
                             <GroupRef name="for this is so because">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="18.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="18.5">
                             <ObjectChange name="now_actively_repeat_it_all_1">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="19.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="19.5">
                             <ObjectChange name="now_actively_repeat_it_all_2">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="21.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="21.2">
                             <ObjectChange name="now_actively_repeat_it_all_3">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="25.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="25.0">
                             <ObjectChange name="now_actively_repeat_it_all_4">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.5">
                             <GroupRef name="now_actively_repeat_it_all">
                                    <Transition duration="0.3">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.7">
                             <ObjectChange name="i_judge_judge">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="27.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="27.6">
                             <ObjectChange name="i_judge_judge">
                                    <Transition duration=".3">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="28">
+                     </TimedActions>
+                     <TimedActions seconds-time="28">
                             <ObjectChange name="as_a_resemblance_to_him">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="29">
+                     </TimedActions>
+                     <TimedActions seconds-time="29">
                             <ObjectChange name="who_comes_first">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="31.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="31.5">
                             <ObjectChange name="who_comes_too_coming_coming_too">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="34">
+                     </TimedActions>
+                     <TimedActions seconds-time="34">
                             <ObjectChange name="who goes there as they go they share">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="36">
+                     </TimedActions>
+                     <TimedActions seconds-time="36">
                             <ObjectChange name="who shares all all is as all as as yet or as yet">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="40.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="40.7">
                             <ObjectChange name="Now to date now to date">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="42.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="42.8">
                             <ObjectChange name="now and now">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="43.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="43.5">
                             <ObjectChange name="and date and the date">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="45">
+                     </TimedActions>
+                     <TimedActions seconds-time="45">
                             <ObjectChange name="who came first 1">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="47">
+                     </TimedActions>
+                     <TimedActions seconds-time="47">
                             <ObjectChange name="who came first 2">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="49">
+                     </TimedActions>
+                     <TimedActions seconds-time="49">
                             <ObjectChange name="who came first 3">
                                    <Transition duration="0.3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="51.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="51.4">
                             <ObjectChange name="stanza_four_button">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="51.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="51.4">
                             <ObjectChange name="napoleon">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="51.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="51.4">
                             <ObjectChange name="right_wall">
                                    <Transition duration="0.0">
                                           <LinkChange>
@@ -5150,31 +5150,31 @@ denote</text>
                                           </LinkChange>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="napoleon">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="left wall">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="right wall">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="stanza_four" start-immediately="false">
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="right_wall">
                                    <Transition duration="0.0">
                                           <LinkChange>
@@ -5182,162 +5182,162 @@ denote</text>
                                           </LinkChange>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="word_napoleon">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="stanza_four_button">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.5">
                             <GroupRef name="napoleon">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.0">
                             <ObjectChange name="stanza_four_sound">
                                    <Transition duration="1.0">
                                           <Sound action="Play Sound" />
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.0">
                             <ObjectChange name="hit_the_wall_storm">
                                    <Transition duration="3.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.0">
                             <ObjectChange name="line 1">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.0">
                             <ObjectChange name="line 2">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="23.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="23.0">
                             <ObjectChange name="line 1">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="24.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="24.0">
                             <ObjectChange name="line 2">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="23.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="23.8">
                             <ObjectChange name="stanza_four_button">
                                    <Transition duration="0.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="24.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="24.3">
                             <ObjectChange name="stanza_four_button">
                                    <Transition duration="0.0">
                                           <Color>0,204,204</Color>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="25.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="25.8">
                             <ObjectChange name="stanza_four_button">
                                    <Transition duration="0.0">
                                           <Color>255,255,0</Color>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.5">
                             <ObjectChange name="stanza_four_button">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="25.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="25.0">
                             <ObjectChange name="hit_the_wall_storm">
                                    <Transition duration="2.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="25.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="25.0">
                             <ObjectChange name="david_storm">
                                    <Transition duration="5.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="27.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="27.0">
                             <ObjectChange name="he_storm">
                                    <Transition duration="2.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="36.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="36.0">
                             <ObjectChange name="is_storm">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="40.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="40.0">
                             <ObjectChange name="is_storm">
                                    <Transition duration="5.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="45.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="45.0">
                             <ObjectChange name="he_storm">
                                    <Transition duration="5.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="45.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="45.0">
                             <ObjectChange name="david_storm">
                                    <Transition duration="5.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="52.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="52.0">
                             <TimerChange name="start_stanza_five">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="start_stanza_five" start-immediately="false">
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="portrait">
                                    <Transition duration="6">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="portrait">
                                    <Transition duration="7">
                                           <Movement>
@@ -5348,8 +5348,8 @@ denote</text>
                                           </Movement>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.0">
                             <GroupRef name="left wall">
                                    <Transition duration="4.0">
                                           <MoveRel>
@@ -5360,8 +5360,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.0">
                             <GroupRef name="right wall">
                                    <Transition duration="4.0">
                                           <MoveRel>
@@ -5372,22 +5372,22 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="2">
+                     </TimedActions>
+                     <TimedActions seconds-time="2">
                             <GroupRef name="right wall">
                                    <Transition duration="3">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="2">
+                     </TimedActions>
+                     <TimedActions seconds-time="2">
                             <GroupRef name="left wall">
                                    <Transition duration="3">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.0">
                             <ObjectChange name="X">
                                    <Transition duration="0.0">
                                           <LinkChange>
@@ -5395,62 +5395,62 @@ denote</text>
                                           </LinkChange>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.0">
                             <ObjectChange name="X">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="stanza_five" start-immediately="false">
-                     <TimedAction seconds-time="0.001">
-                            <SoundRef>stanza_five_audio</SoundRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.001">
+                            <SoundRef name="stanza_five_audio" />
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="portrait">
                                    <Transition duration="0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="X">
                                    <Transition duration="0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <GroupRef name="curls">
                                    <Transition duration="5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.69">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.69">
                             <ObjectChange name="can_curls">
                                    <Transition duration="0.01">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.02">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.02">
                             <ObjectChange name="rob">
                                    <Transition duration=".2">
                                           <Scale>3</Scale>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.02">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.02">
                             <ObjectChange name="rob">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.0">
                             <ObjectChange name="portrait">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -5461,92 +5461,92 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.6">
                             <ObjectChange name="curls2">
                                    <Transition duration="0.01">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.02">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.02">
                             <ObjectChange name="quote">
                                    <Transition duration="0.1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.02">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.02">
                             <ObjectChange name="quote">
                                    <Transition duration=".2">
                                           <Scale>3</Scale>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="2.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="2.1">
                             <ObjectChange name="quoteable">
                                    <Transition duration="0.5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.1">
                             <GroupRef name="quote_text">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.3">
                             <ObjectChange name="as">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="4">
+                     </TimedActions>
+                     <TimedActions seconds-time="4">
                             <ObjectChange name="portrait">
                                    <Transition duration="15">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="4">
+                     </TimedActions>
+                     <TimedActions seconds-time="4">
                             <ObjectChange name="portrait">
                                    <Transition duration="16">
                                           <Scale>50</Scale>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.8">
                             <ObjectChange name="presently">
                                    <Transition duration=".2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="4.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="4.7">
                             <ObjectChange name="exactitude_s5">
                                    <Transition duration=".2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.7">
                             <ObjectChange name="trains">
                                    <Transition duration=".2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="6.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="6.3">
                             <ObjectChange name="h">
                                    <Transition duration=".2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.3">
                             <ObjectChange name="as">
                                    <Transition duration=".2">
                                           <MoveRel>
@@ -5557,8 +5557,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.3">
                             <ObjectChange name="h">
                                    <Transition duration=".2">
                                           <MoveRel>
@@ -5569,8 +5569,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.3">
                             <ObjectChange name="trains">
                                    <Transition duration=".2">
                                           <MoveRel>
@@ -5581,57 +5581,57 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.0">
                             <ObjectChange name="h">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.2">
                             <ObjectChange name="presently">
                                    <Transition duration=".2">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.2">
                             <ObjectChange name="exactitude_s5">
                                    <Transition duration=".2">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.00">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.00">
                             <ObjectChange name="presently2">
                                    <Transition duration=".2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="11">
+                     </TimedActions>
+                     <TimedActions seconds-time="11">
                             <ObjectChange name="proportions">
                                    <Transition duration=".2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="11.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="11.5">
                             <ObjectChange name="presently2">
                                    <Transition duration=".1">
                                           <Color>255,255,102</Color>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="12.00">
+                     </TimedActions>
+                     <TimedActions seconds-time="12.00">
                             <ObjectChange name="trains">
                                    <Transition duration=".2">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="12.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="12.3">
                             <ObjectChange name="as">
                                    <Transition duration=".4">
                                           <MoveRel>
@@ -5642,8 +5642,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13.00">
+                     </TimedActions>
+                     <TimedActions seconds-time="13.00">
                             <ObjectChange name="as">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -5654,8 +5654,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13.00">
+                     </TimedActions>
+                     <TimedActions seconds-time="13.00">
                             <ObjectChange name="presently2">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -5666,8 +5666,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13.00">
+                     </TimedActions>
+                     <TimedActions seconds-time="13.00">
                             <ObjectChange name="proportions">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -5678,8 +5678,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13.00">
+                     </TimedActions>
+                     <TimedActions seconds-time="13.00">
                             <GroupRef name="curls">
                                    <Transition duration="5">
                                           <MoveRel>
@@ -5690,15 +5690,15 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="13">
+                     </TimedActions>
+                     <TimedActions seconds-time="13">
                             <GroupRef name="curls">
                                    <Transition duration="6">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="17">
+                     </TimedActions>
+                     <TimedActions seconds-time="17">
                             <ObjectChange name="wasthere_action2">
                                    <Transition duration="3">
                                           <Movement>
@@ -5709,50 +5709,50 @@ denote</text>
                                           </Movement>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="17">
+                     </TimedActions>
+                     <TimedActions seconds-time="17">
                             <ObjectChange name="wasthere_action2">
                                    <Transition duration="2">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26">
+                     </TimedActions>
+                     <TimedActions seconds-time="26">
                             <ObjectChange name="as_">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.4">
                             <ObjectChange name="even">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.7">
                             <ObjectChange name="say_so2">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="29.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="29.0">
                             <ObjectChange name="portrait">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="29.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="29.0">
                             <ObjectChange name="wasthere_action2">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="30.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="30.0">
                             <ObjectChange name="say_so2">
                                    <Transition duration="0.0">
                                           <LinkChange>
@@ -5760,20 +5760,20 @@ denote</text>
                                           </LinkChange>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="stanza_six" start-immediately="false">
-                     <TimedAction seconds-time="1.3">
-                            <SoundRef>stanza_six_audio</SoundRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.3">
+                     <TimedActions seconds-time="1.3">
+                            <SoundRef name="stanza_six_audio" />
+                     </TimedActions>
+                     <TimedActions seconds-time="1.3">
                             <ObjectChange name="I_land">
                                    <Transition duration="1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1">
+                     </TimedActions>
+                     <TimedActions seconds-time="1">
                             <ObjectChange name="1">
                                    <Transition duration="2">
                                           <Movement>
@@ -5784,15 +5784,15 @@ denote</text>
                                           </Movement>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1">
+                     </TimedActions>
+                     <TimedActions seconds-time="1">
                             <ObjectChange name="1">
                                    <Transition duration="1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="1.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="1.3">
                             <ObjectChange name="I_land">
                                    <Transition duration="2">
                                           <Movement>
@@ -5803,134 +5803,134 @@ denote</text>
                                           </Movement>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3">
+                     </TimedActions>
+                     <TimedActions seconds-time="3">
                             <ObjectChange name="2">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.3">
                             <ObjectChange name="I_land2">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="3.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="3.7">
                             <ObjectChange name="3">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="4">
+                     </TimedActions>
+                     <TimedActions seconds-time="4">
                             <ObjectChange name="the_land">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="4.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="4.8">
                             <ObjectChange name="3_2">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.1">
                             <ObjectChange name="the_land2">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.1">
                             <ObjectChange name="the_land2b">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="5.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="5.6">
                             <ObjectChange name="3_2_copy">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="6">
+                     </TimedActions>
+                     <TimedActions seconds-time="6">
                             <ObjectChange name="the_land2_copy">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="6">
+                     </TimedActions>
+                     <TimedActions seconds-time="6">
                             <ObjectChange name="the_land2b_copy">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="6.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="6.6">
                             <ObjectChange name="2_2">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.2">
                             <ObjectChange name="I_land3">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="7.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="7.6">
                             <ObjectChange name="2_3">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8">
+                     </TimedActions>
+                     <TimedActions seconds-time="8">
                             <ObjectChange name="I_land4">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="8.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="8.5">
                             <ObjectChange name="1_2">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9">
+                     </TimedActions>
+                     <TimedActions seconds-time="9">
                             <ObjectChange name="I_land5">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="9.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="9.5">
                             <ObjectChange name="2_4">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10">
+                     </TimedActions>
+                     <TimedActions seconds-time="10">
                             <ObjectChange name="I_land6">
                                    <Transition duration=".3">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.5">
                             <GroupRef name="land">
                                    <Transition duration="7">
                                           <MoveRel>
@@ -5941,99 +5941,99 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="10.7">
                             <GroupRef name="land">
                                    <Transition duration="7">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="11">
+                     </TimedActions>
+                     <TimedActions seconds-time="11">
                             <ObjectChange name="frame_wall">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="12.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="12.2">
                             <ObjectChange name="they_cannot">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="12.9">
+                     </TimedActions>
+                     <TimedActions seconds-time="12.9">
                             <ObjectChange name="a_note">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="14.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="14.8">
                             <ObjectChange name="a_float">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="15.9">
+                     </TimedActions>
+                     <TimedActions seconds-time="15.9">
                             <ObjectChange name="they_dote">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="17.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="17.6">
                             <ObjectChange name="they_as_denote">
                                    <Transition duration=".5">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13">
+                     </TimedActions>
+                     <TimedActions seconds-time="13">
                             <ObjectChange name="eye_pic">
                                    <Transition duration="6">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="20.8">
+                     </TimedActions>
+                     <TimedActions seconds-time="20.8">
                             <ObjectChange name="kings_return1_right">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="21">
+                     </TimedActions>
+                     <TimedActions seconds-time="21">
                             <ObjectChange name="kings_return2">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="21.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="21.2">
                             <ObjectChange name="kings_return3">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="21.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="21.4">
                             <ObjectChange name="kings_return4">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="21.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="21.6">
                             <ObjectChange name="kings_return5">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="23">
+                     </TimedActions>
+                     <TimedActions seconds-time="23">
                             <ObjectChange name="pp_chunk1_return">
                                    <Transition duration="3">
                                           <Movement>
@@ -6045,22 +6045,22 @@ denote</text>
                                           </Movement>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="23">
+                     </TimedActions>
+                     <TimedActions seconds-time="23">
                             <ObjectChange name="pp_chunk1_return">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26">
+                     </TimedActions>
+                     <TimedActions seconds-time="26">
                             <ObjectChange name="pp_chunk1_return">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="22.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="22.0">
                             <ObjectChange name="kings_return1">
                                    <Transition duration="3.0">
                                           <MoveRel>
@@ -6071,8 +6071,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="19.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="19.0">
                             <GroupRef name="frames">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -6083,15 +6083,15 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="19">
+                     </TimedActions>
+                     <TimedActions seconds-time="19">
                             <ObjectChange name="biggie">
                                    <Transition duration="2.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="21.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="21.0">
                             <ObjectChange name="eye_pic">
                                    <Transition duration="1.0">
                                           <MoveRel>
@@ -6103,8 +6103,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="23.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="23.0">
                             <ObjectChange name="eye_pic">
                                    <Transition duration="3.0">
                                           <MoveRel>
@@ -6115,53 +6115,53 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="13.0">
                             <TimerChange name="pp_party">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="12">
+                     </TimedActions>
+                     <TimedActions seconds-time="12">
                             <GroupRef name="pp_party_left">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="11.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="11.0">
                             <ObjectChange name="frame_right_return">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="13.1">
+                     </TimedActions>
+                     <TimedActions seconds-time="13.1">
                             <TimerChange name="pp_party2">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="12">
+                     </TimedActions>
+                     <TimedActions seconds-time="12">
                             <GroupRef name="pp_party_right">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="11.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="11.0">
                             <ObjectChange name="frame_left_return">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.4">
                             <ObjectChange name="tongue">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="27">
+                     </TimedActions>
+                     <TimedActions seconds-time="27">
                             <ObjectChange name="tongue">
                                    <Transition duration="4.5">
                                           <MoveRel>
@@ -6172,95 +6172,95 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.0">
                             <GroupRef name="all_minus_biggie">
                                    <Transition duration="0.5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="25.9">
+                     </TimedActions>
+                     <TimedActions seconds-time="25.9">
                             <TimerChange name="pp_party2">
                                    <stop />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="25.9">
+                     </TimedActions>
+                     <TimedActions seconds-time="25.9">
                             <TimerChange name="pp_party">
                                    <stop />
                             </TimerChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.0">
                             <GroupRef name="pp_party_right">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="26.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="26.0">
                             <GroupRef name="pp_party_left">
                                    <Transition duration=".5">
                                           <Visible>false</Visible>
                                    </Transition>
                             </GroupRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="35.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="35.0">
                             <ObjectChange name="tongue">
                                    <Transition duration="0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="28.75">
+                     </TimedActions>
+                     <TimedActions seconds-time="28.75">
                             <ObjectChange name="biggie">
                                    <Transition duration="0.3">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="27.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="27.5">
                             <ObjectChange name="presently_yetagain">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="25.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="25.5">
                             <ObjectChange name="presently_yetagain">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="29.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="29.5">
                             <ObjectChange name="history_teaches">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="18">
+                     </TimedActions>
+                     <TimedActions seconds-time="18">
                             <ObjectChange name="X_storm">
                                    <Transition duration="1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="25">
+                     </TimedActions>
+                     <TimedActions seconds-time="25">
                             <ObjectChange name="X_storm">
                                    <Transition duration="1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="24">
+                     </TimedActions>
+                     <TimedActions seconds-time="24">
                             <ObjectChange name="pp_chunk2_return">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="24">
+                     </TimedActions>
+                     <TimedActions seconds-time="24">
                             <ObjectChange name="pp_chunk2_return">
                                    <Transition duration="3">
                                           <Movement>
@@ -6272,43 +6272,43 @@ denote</text>
                                           </Movement>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="27">
+                     </TimedActions>
+                     <TimedActions seconds-time="27">
                             <ObjectChange name="pp_chunk2_return">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="as_">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="say_so2">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
                             <ObjectChange name="even">
                                    <Transition duration="1.0">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="31">
+                     </TimedActions>
+                     <TimedActions seconds-time="31">
                             <ObjectChange name="period">
                                    <Transition duration="1.0">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="33">
+                     </TimedActions>
+                     <TimedActions seconds-time="33">
                             <ObjectChange name="period">
                                    <Transition duration="20">
                                           <MoveRel>
@@ -6319,8 +6319,8 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="33">
+                     </TimedActions>
+                     <TimedActions seconds-time="33">
                             <ObjectChange name="history_teaches">
                                    <Transition duration="20">
                                           <MoveRel>
@@ -6331,108 +6331,108 @@ denote</text>
                                           </MoveRel>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="pp_party" start-immediately="false">
-                     <TimedAction seconds-time="0.1">
+                     <TimedActions seconds-time="0.1">
                             <ObjectChange name="chunks_flashing_1">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.2">
                             <ObjectChange name="chunks_flashing_2">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.3">
                             <ObjectChange name="chunks_flashing_3">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.4">
                             <ObjectChange name="chunks_flashing_1">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.5">
                             <ObjectChange name="chunks_flashing_2">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.6">
                             <ObjectChange name="chunks_flashing_3">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.7">
                             <TimerChange name="pp_party">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="pp_party2" start-immediately="false">
-                     <TimedAction seconds-time="0.1">
+                     <TimedActions seconds-time="0.1">
                             <ObjectChange name="chunks_flashing_1b">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.2">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.2">
                             <ObjectChange name="chunks_flashing_2b">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.3">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.3">
                             <ObjectChange name="chunks_flashing_3b">
                                    <Transition duration=".1">
                                           <Visible>true</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.4">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.4">
                             <ObjectChange name="chunks_flashing_1b">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.5">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.5">
                             <ObjectChange name="chunks_flashing_2b">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.6">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.6">
                             <ObjectChange name="chunks_flashing_3b">
                                    <Transition duration=".1">
                                           <Visible>false</Visible>
                                    </Transition>
                             </ObjectChange>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.7">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.7">
                             <TimerChange name="pp_party2">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
               <Timeline name="ambience" start-immediately="false">
-                     <TimedAction seconds-time="0.0">
+                     <TimedActions seconds-time="0.0">
                             <MoveCave duration="0.0">
                                           <Relative />
                                    <Placement>
@@ -6440,15 +6440,15 @@ denote</text>
                                           <Position><x>0.0</x><y>0.0</y><z>0.0</z></Position>
                                    </Placement>
                             </MoveCave>
-                     </TimedAction>
-                     <TimedAction seconds-time="0.0">
-                            <SoundRef>gertrubience</SoundRef>
-                     </TimedAction>
-                     <TimedAction seconds-time="10.0">
+                     </TimedActions>
+                     <TimedActions seconds-time="0.0">
+                            <SoundRef name="gertrubience" />
+                     </TimedActions>
+                     <TimedActions seconds-time="10.0">
                             <TimerChange name="ambience">
                                    <start />
                             </TimerChange>
-                     </TimedAction>
+                     </TimedActions>
               </Timeline>
        </TimelineRoot>
        <PlacementRoot>

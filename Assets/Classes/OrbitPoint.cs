@@ -4,15 +4,15 @@ using System.Xml.Serialization;
 [XmlRoot(ElementName="OrbitPoint")]
 public class OrbitPoint { 
 
-	[XmlAttribute(AttributeName="center")] 
-	public string Center; 
+	[XmlElement(ElementName="Center")] 
+	public Vector3 Center; 
 
-	[XmlAttribute(AttributeName="magnitude")] 
+	[XmlElement(ElementName="Magnitude")] 
 	public double Magnitude; 
 
-	[XmlAttribute(AttributeName="epsilon")] 
+	[XmlElement(ElementName="Epsilon")] 
 	public double Epsilon; 
 
-	[XmlAttribute(AttributeName="max_radius")] 
+	[XmlElement(ElementName="Max_radius")] 
 	public double MaxRadius; 
 }

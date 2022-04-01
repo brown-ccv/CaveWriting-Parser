@@ -1,6 +1,6 @@
 # Writing3D Parser
 
-Parser for converting XML code from CaveWriting into a Unity project
+Unity package for converting XML code from CaveWriting projects into a Unity project
 
 I'm adding notes about the changes to the C# classes I'm making while I work through them. This is just in case I have to redo the conversion and thus these changes. Notes can be deleted (moved at the least) when we go to publish the finalized package.
 
@@ -17,18 +17,18 @@ The [XML to C# convertor](https://json2csharp.com/xml-to-csharp) used to generat
 | File              | Original          | Fixed             |
 | ---------------   | ---------------   | ---------------   |
 | Object.cs | `public DateTime Scale` | `public double Scale`
-| Object.cs | `public double Color`   | `public Color Color`
+| Object.cs | `public double Color`   | `public Color32 Color`
 | Transition.cs | `public bool Text`  | `public string Text`
 | GroupRef.cs   | `public bool Text`  | `public string Text`
 | ObjectChange.cs   | `public bool Text`  | `public string Text`
 | TimedActions.cs   | `public bool Text`  | `public string Text`
-| Link.cs   | `public double EnabledColor`    | `public Color EnabledColor`
-| Link.cs   | `public double SelectedColor`   | `public Color SelectedColor`
+| Link.cs   | `public double EnabledColor`    | `public Color32 EnabledColor`
+| Link.cs   | `public double SelectedColor`   | `public Color32 SelectedColor`
 | Transition.cs | `public int Duration` | `public double Duration`
 | Text.cs | `public List<string> Content` | `public string Content`
 | Axis.cs | `public string Rotation;`  | `public Vector3 Rotation;`
 | ParticleSystem.cs | `public int ActionsName;` | `public string ActionsName;`
-| Transition.cs | `public double Color;`    | `public Color Color;`
+| Transition.cs | `public double Color;`    | `public Color32 Color;`
 | ParticleActionList.cs | `public int Name;` | `public string Name;`
 
 ## Renamed fields
@@ -103,22 +103,25 @@ The `text` element of `Text` is `Content` in c#:
 
 Properties that are `Lists` of elements have `s` appended to their c# variable - the XML is untouched.
 
-- `ObjectRoot.Object(s)`
-- `GroupRoot.Group(s)`
+- `Group.Ref(s)`
 - `ParticleActionList.ParticleAction(s)`
-- `ParticleActionRoot.ParticleActionList(s)`
-- `PlacementRoot.Placement(s)`
-- `SoundRoot.Sound(s)`
-- `TimelineRoot.Timeline(s)`
+- `Timeline.TimedActions`
 
-Here's an example using `ObjectRoot.Objects`:
+Here's an example using `Group.ObjectRefs`:
 
 > ```cs
->  [XmlElement(ElementName="Object")] 
->  public List<Object> Objects; 
+>[XmlRoot(ElementName="Group")]
+>public class Group { 
+>
+>  [XmlElement(ElementName="ObjectRef")]
+>  public List<string> ObjectRefs; 
+>
+>  [XmlAttribute(AttributeName="name")] 
+>  public string Name; 
+>}
 >```
 
-Note that [Timeline.TimedActions](#****) follows the same schema but other changes are made to the class
+Note that [Timeline.TimedActions](#timedaction) follows the same schema but other changes are made to the class.
 
 ## Unity Special Types
 
@@ -126,7 +129,7 @@ C# variable types specific to Unity need to be arranged in a specific way in the
 
 ### Color
 
-The original XML holds 3 values (RGB) ranging from 0-255. Unity needs 4 values (RGBA) ranging from 0-1. The `<a>` value is always 1.
+The original XML holds 3 values (RGB) ranging from 0-255. The Unity Color32 type needs 4 values (RGBA). We always set the alpha value to full (255).
 
 The changes are present for the following classes:
 
@@ -142,10 +145,10 @@ The changes are present for the following classes:
    
    <!-- New -->
    <Color>
-     <r>1</r>
-     <g>1</g>
-     <b>1</b>
-     <a>1</a>
+     <r>255</r>
+     <g>255</g>
+     <b>255</b>
+     <a>255</a>
    </Color>
 ```
 
@@ -171,7 +174,7 @@ This change is made to `Placement.Position`. Note that there are other Vector3's
 
 ### Xml Attributes vs Elements
 
-Complex types cannot be stored as Xml attributes but some of the original Xml stores Unity types as Xml attributes. Fixing this requires changes to both the xml and C# class file. Note that ALL of the attributes of such a class  will be changed to elements, not just the complex type.
+Complex types cannot be stored as Xml attributes but some of the original Xml stores Unity types as Xml attributes. Fixing this requires changes to both the xml and C# class file. Note that ALL of the attributes of such a class  will be changed to elements, not just the complex type, and that the element name is Capitalized.
 
 This change is needed for the following properties:
 
@@ -228,15 +231,20 @@ I made (plan to make) some additional changes to the xml/c# files to make the co
 
 ### TimedAction
 
-TODO:
-`TimedActions` should be `TimedAction`
+The auto-generated class `TimedActions` has been renamed `TimedAction` and the file name updated accordingly. This is sort of the opposite problem as appending `s` to `<List>` type properties - the `s` belongs on the variable name, not the class itself. `Timeline.cs` uses the `TimedAction` class.
 
-### GroupRoot.Group.ObjectRef
+```cs
+[XmlRoot(ElementName="Timeline")]
+public class Timeline { 
 
-TODO:
-`GroupRoot.Group.Objects` should be `GroupRoot.Group.ObjectRefs` where `.ObjectRef` is a list of strings pointing to the `Object.name` property
+   [XmlElement(ElementName="TimedAction")]
+   public List<TimedAction> TimedActions; 
 
-## Sound
+   /* ... */
+}
+```
+
+### Sound
 
 TODO:
 
@@ -255,20 +263,154 @@ TODO:
 
 ## Class Consolidation
 
+### Story
+
+The `GroupRoot`, `ObjectRoot`, `ParticleActionRoot`, `PlacementRoot`, `SoundRoot`, and `TimelineRoot` properties of the `Story` class are all classes with only one property - a list. These fields contain all of the groups, objects, etc., in the project. The lists have been consolidated into `Story.cs` and `*Root.cs` files have been deleted. Note the use of `[XmlArray]` abd `[XmlArrayItem]` to deserialize the data correctly.
+
+```cs
+[XmlRoot(ElementName="Story")]
+public class Story { 
+
+   // Before
+
+   [XmlElement(ElementName="ObjectRoot")] 
+   public ObjectRoot ObjectRoot; 
+
+   [XmlElement(ElementName="GroupRoot")]
+   public GroupRoot GroupRoot;
+
+   [XmlElement(ElementName="TimelineRoot")] 
+   public TimelineRoot TimelineRoot;
+
+   [XmlElement(ElementName="PlacementRoot")] 
+   public PlacementRoot PlacementRoot; 
+
+   [XmlElement(ElementName="SoundRoot")] 
+   public SoundRoot SoundRoot;
+
+   [XmlElement(ElementName="ParticleActionRoot")] 
+   public ParticleActionRoot ParticleActionRoot; 
+
+   /* ... */
+
+   // After
+
+   [XmlArray(ElementName="ObjectRoot")]
+   [XmlArrayItem(ElementName="Object")] 
+   public List<Object> ObjectRoot
+
+   [XmlArray(ElementName="GroupRoot")]
+   [XmlArrayItem(ElementName="Group")] 
+   public List<Group> GroupRoot
+
+   [XmlArray(ElementName="TimelineRoot")]
+   [XmlArrayItem(ElementName="Timeline")] 
+   public List<Timeline> TimelineRoot
+
+   [XmlArray(ElementName="PlacementRoot")]
+   [XmlArrayItem(ElementName="Placement")] 
+   public List<Placement> PlacementRoot
+
+   [XmlArray(ElementName="SoundRoot")]
+   [XmlArrayItem(ElementName="Sound")] 
+   public List<Sound> SoundRoot
+
+   [XmlArray(ElementName="ParticleActionRoot")]
+   [XmlArrayItem(ElementName="ParticleActionList")] 
+   public List<ParticleAction> ParticleActionRoot
+
+   /* ... */
+}
+
+```
+
+### LinkRoot
+
+The `LinkRoot` class follows the same pattern as the other [`*Root` classes](#story) but is itself a property of the `Object` class. I decided to rename the property `Links` instead of `LinkRoot` because it's not a part of the `Story` class - that change is made in the xml file as well.
+
+```cs
+[XmlRoot(ElementName="Object")]
+public class Object { 
+
+   // Before 
+   [XmlElement(ElementName="LinkRoot")] 
+   public LinkRoot LinkRoot; 
+
+   /* ... */
+
+   // After 
+
+   [XmlArray(ElementName="Links")]
+   [XmlArrayItem(ElementName="Link")]
+   public List<Link> Links; 
+
+   /* ... */
+}
+```
+
 ### Global
 
 TODO: Background becomes a property of Global and is of type Color. (Will be able to remove the Background class file)
+The `Global.Background` class only contains one attribute - it's color. The `Background` class has been deleted and `Global.Background` is a property of type `Color32`, renamed to `BackgroundColor`
+
+```cs
+[XmlRoot(ElementName="Global")]
+public class Global { 
+   /* ... */
+
+   [XmlElement(ElementName="Background")] 
+   public Color32 BackgroundColor;  
+
+   /* ... */
+}
+
+```
+
+### GroupRoot.Group.ObjectRef
+
+The `Group.Objects` class has been deleted as it is just an XML element with a name attribute. The name attribute is translated as the inner text of `Objects`, and the tag has been renamed `ObjectRef`. The variable name has been updated as well, to `ObjectRefs`.
+
+```xml
+<!-- Original -->
+<Group name="title">
+       <ObjectRef name="start_button" />
+       <ObjectRef name="A Completed Portrait of Picasso" />
+</Group>
+
+<!-- New -->
+<Group name="title">
+       <ObjectRef>start_button</ObjectRef>
+       <ObjectRef>A Completed Portrait of Picasso</ObjectRef>
+</Group>
+```
+
+```cs
+[XmlRoot(ElementName="Group")]
+public class Group { 
+
+   // Original 
+   [XmlElement(ElementName="Objects")]
+   public List<Objects> Objects;
+
+   // New
+   [XmlElement(ElementName="ObjectRef")]
+   public List<string> ObjectRefs;
+
+   /* ... */
+}
+```
+
+### SoundRef
+
+The `SoundRef` class falls in the same position as the [ObjectRef](#grouprootgroupobjectref) class. The `name` attribute has become the inner text of each `SoundRef` tag, the `SoundRef` property is now of type `string`, and the `SoundRef` class has been deleted.
+
+This change is present in `Object.SoundRef` and `TimedAction.SoundRef`.
 
 ## TODO
 
 ### Next Steps
 
-1) [Xml changes for color types](#color)
-2) [Global.Background.Color] change(#global)
-3) [Xml changes for Vector3 types](#vector3)
-4) [Xml changes for Vector3 types with attribute -> element conversions](#xml-attributes-vs-elements)
-5) [TimedActions change](#timedaction)
-6) [GroupRoot.Group.Objects change](#grouprootgroupobjectref)
+1) GroupRef.Transition (pull out to other class, GroupRef is just a string)
 
 ### Stuff to Figure Out
 
@@ -276,5 +418,9 @@ TODO: Background becomes a property of Global and is of type Color. (Will be abl
 - Make an enumeration for the "center" and things like it? All sorts of xml tags point to this location type (`HorizAlign`, `VertAlign`, `RelativeTo`, etc.)
 - All path names in the xml will need to replace `./` with `Application.dataPath + "/xml/"`
   - Do this in the python script in CaveWriting-Projects?
-=======
-Unity packaged used to parse CaveWriting files (XML) into a Unity projects
+
+### Parking Lot
+
+1) [Sound changes](#sound)
+2) [ParticleDomain changes](#particle-domain)
+3) TimerChange
